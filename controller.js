@@ -3,18 +3,20 @@ $(() => {
 });
 
 function load(){
+
     let repo = new jsonRepository();
     repo.getFishingGrounds((err, res) => {
         if(err){    //ya veremos
             
         }
         else{
-            //console.log(JSON.parse(res));
+            let talk = new voice(); //Establecemos el idioma
+            talk.setLanguage("es-ES");
             loadMap(res);
         }
-    });
-    
+    });  
 }
+ 
 
 function showHideInfo(){    //param
     if($("#layoutInfo").is(":visible"))
