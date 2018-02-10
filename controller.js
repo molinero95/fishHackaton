@@ -69,18 +69,18 @@ function getInfoById(infoId) {
     return info;
 }
 
-function showInfo(){
+function showMethodsAvailable(){
 
-}
+};
 
 function showMeasure(){
 
-}
+};
 
 function showMore(){
-    //
-}
+    
+};
 
 function showForbidden() {
 
-}
+};
