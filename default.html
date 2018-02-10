@@ -7,6 +7,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="Data/jsonRepository.js"></script>
+    <script src="Map/map.js"></script>
+    <script src="controller.js"></script>
 </header>
 
 <body>
@@ -15,12 +17,12 @@
 
         _repo.getFishingGrounds((data) => {
             alert(data[0].name);
-            
-
-
         });
 
     </script>
+    <div id="map">
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLcHPb0jtpNFs83fZobeJ0HZUCFc-0w_s&callback=load"></script>
+    </div>
 </body>
 
 </html>
