@@ -3,6 +3,10 @@ $(() => {
     $("#contactLayout").hide();
     $("#nav-contact-tab").on("click", showContact);
     $("#nav-home-tab").on("click", showHome);
+    $("#artBtn").on("click", showInfo);
+    $("#measureBtn").on("click", showMeasure);
+    $("#timeBtn").on("click", showTime);
+    $("#forbiddenBtn").on("click", showForbidden);
 });
 
 let fishingGrounds = null;
@@ -30,7 +34,7 @@ let addListenersOnPolygon = function (polygon, element) {
 
 function showHideInfo(fGround) {    //param
     if ($("#layoutInfo").is(":visible") && !region) {
-        $("#layoutInfo").hide();
+        $("#layoutInfo").hide(1500);
     }
     else if ($("#layoutInfo").is(":visible") && region) {    //modficar los datos de layoutInfo
         $("#layoutInfo > h2").text(fGround.name);
@@ -38,7 +42,7 @@ function showHideInfo(fGround) {    //param
     }
     else if (!$("#layoutInfo").is(":visible") && region) {
         $("#layoutInfo > h2").text(fGround.name);
-        $("#layoutInfo").show();
+        $("#layoutInfo").show(1500);
     }
     //Si no es visible y tocamos agua no hacemos nada
 }
@@ -62,4 +66,20 @@ function getInfoById(infoId) {
         }
     });
     return info;
+}
+
+function showInfo(){
+
+}
+
+function showMeasure(){
+
+}
+
+function showTime(){
+
+}
+
+function showForbidden() {
+
 }
