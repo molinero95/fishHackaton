@@ -70,7 +70,7 @@ function getInfoById(infoId) {
 }
 
 function showInfo(){
-
+    alert ("prueba");
 }
 
 function showMeasure(){
