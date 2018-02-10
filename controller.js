@@ -5,7 +5,7 @@ $(() => {
     $("#nav-home-tab").on("click", showHome);
     $("#artBtn").on("click", showInfo);
     $("#measureBtn").on("click", showMeasure);
-    $("#timeBtn").on("click", showTime);
+    $("#moreBtn").on("click", showMore);
     $("#forbiddenBtn").on("click", showForbidden);
 });
 
@@ -77,7 +77,7 @@ function showMeasure(){
 
 }
 
-function showTime(){
+function showMore(){
     //
 }
 
