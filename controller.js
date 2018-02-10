@@ -28,7 +28,8 @@ let addListenersOnPolygon = function (polygon, element) {
     });
 }
 
-function showHideInfo(fGround) {    //param
+function showHideInfo(fGround) {
+
     if ($("#layoutInfo").is(":visible") && !region) {
         $("#layoutInfo").hide();
     }

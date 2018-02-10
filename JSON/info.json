@@ -91,6 +91,13 @@
             "REAL DECRETO 429/2004, de 12 de marzo, por el que se establecen medidas de ordenación de la flota pesquera de cerco.",
             "http://www.boe.es/boe/dias/2004/03/16/pdfs/A11557-11558.pdf"
         ],
+        "speech": [
+            "Todos los buques deberán estar inscritos en los censos correspondientes y disponer de las licencias adecuadas, en función de las artes de pesca que ejerzan.",
+            "En general, no se permite faenar durante más de cinco días a la semana, debiendo  existir un descanso de al menos 48 horas ininterrumpidas.",
+            "Existen restricciones que afectan a las dimensiones de los buques, en función del tipo de artes que utilicen.",
+            "El periodo en el que está autorizada la pesca de langosta con nasas se encuentra limitado, así como la profundidad mínima de los fondos en los que se puede capturar este animal.",
+            "Para determinadas especies, se han establecido unas tallas mínimas que los ejemplares capturados deberán presentar para poder ser retenidos a bordo y comercializados."
+        ],
         "more": "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
     },
     {
@@ -206,6 +213,12 @@
             "Los aparejos y artes deberán estar señalizados adecuadamente.",
             "REAL DECRETO 1428/1997, de 15 de septiembre, por el que se regula la pesca con artes menores en el caladero del Golfo de Cádiz.",
             "http://www.boe.es/boe/dias/1997/10/01/pdfs/A28585-28587.pdf"
+        ],
+        "speech": [
+            "Todos los buques deberán estar inscritos en los censos correspondientes y disponer de las licencias adecuadas, en función de las artes de pesca que ejerzan.",
+            "En general, no se permite faenar durante más de cinco días a la semana, debiendo  existir un descanso de al menos 48 horas ininterrumpidas.",
+            "Existen restricciones que afectan a las dimensiones de los buques, en función del tipo de artes que utilicen.",
+            "La pesca de voraz o besugo se encuentra limitada a aquellos buques que cuenten con la correspondiente licencia para la pesca con voraceras. El periodo de pesca de este animal se encuentra restringido, así como el esfuerzo pesquero, que no podrá superar los 140 días al año."
         ],
         "more": "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
     },
@@ -351,6 +364,16 @@
             "REAL DECRETO 395/2006, de 31 de marzo, por el que se establecen medidas de ordenación de la flota pesquera que opera con artes fijos y artes menores en el Mediterráneo.",
             "http://www.boe.es/boe/dias/2006/04/20/pdfs/A15187-15188.pdf"
         ],
+        "speech": [
+            "Los útiles de pesca, sus dimensiones, y las dimensiones y potencias de los buques se encuentran restringidos para las modalidades de pesca de cerco y de arrastre de fondo.",
+            "El esfuerzo de pesca para artes fijas y menores está limitado.",
+            "Solo algunas especies están autorizadas para su captura con artes de cerco.",
+            "La pesquería de cebo vivo como auxiliar a la pesca de túnidos está sometida a restricciones.",
+            "La pesca del raor, el verderol, la lampuga y el voraz o besugo únicamente podrá realizarse durante determinados periodos del año, respetando las épocas reproductivas de estas especies.",
+            "La pesca de la gamba rosada solo podrá realizarse mediante artes de arrastre, existiendo limitaciones en las dimensiones de las mallas utilizadas.",
+            "Existe una zona de pesca restringida de especies demersales.",
+            "Para determinadas especies, se han establecido unas tallas mínimas que los ejemplares capturados deberán presentar para poder ser retenidos a bordo y comercializados."
+        ],
         "more": "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
     },
     {
@@ -442,6 +465,11 @@
             "Solo determinadas especies están autorizadas para ser pescadas con artes de cerco, y su utilización como cebo, vivo o muerto, o como carnada, se encuentra restringida.",
             "Orden AAA/2536/2015, de 30 de noviembre, por la que se regulan las artes y modalidades de pesca marítima y se establece un plan de gestión para los buques de los censos del Caladero Nacional Canario.",
             "https://www.boe.es/boe/dias/2015/12/01/pdfs/BOE-A-2015-13003.pdf"
+        ],
+        "speech": [
+            "Las artes de arrastre están prohibidas en este caladero en cualquiera de sus formas, así como la práctica del jigging o pesca vertical.",
+            "Solo determinadas especies están autorizadas para ser pescadas con artes de cerco, y su utilización como cebo, vivo o muerto, o como carnada, se encuentra restringida.",
+            "Para determinadas especies, se han establecido unas tallas mínimas que los ejemplares capturados deberán presentar para poder ser retenidos a bordo y comercializados."
         ],
         "more": "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
     }
