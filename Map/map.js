@@ -6,9 +6,27 @@ function loadMap(){
     });
     generatePolygons({}, map)
 }
+
+let addListenersOnPolygon = function(polygon) {
+    google.maps.event.addListener(polygon, 'click', function (event) {
+      alert(polygon.indexID);
+    });  
+}
+
+function generatePolygon(path){
+    return new google.maps.Polygon({
+        path: path,
+        geodesic: true,
+        strokeColor: '#FF0000',
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+    });
+}
+
 //TODO poner las coordenadas de fichero
 //Por ahora demo de como será
 function generatePolygons(data, map){
+    //Dato de ejemplo
     data["27"] = {};
     data["27"]["8c"] = [
         {lat: 48, lng: -11},
@@ -20,11 +38,8 @@ function generatePolygons(data, map){
         {lat: 46.32, lng: -11},
         {lat: 48, lng: -11}
     ];
-    new google.maps.Polygon({
-        path:  data["27"]["8c"],
-        geodesic: true,
-        strokeColor: '#FF0000',
-        strokeOpacity: 1.0,
-        strokeWeight: 2
-    }).setMap(map);
+    let s27_8c = generatePolygon(data["27"]["8c"]);
+    s27_8c.setMap(map);
+    addListenersOnPolygon(s27_8c);
 }
+
