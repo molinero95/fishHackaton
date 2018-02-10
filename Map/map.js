@@ -4,7 +4,7 @@ let region = false;
 function loadMap(data){
     var madrid = {lat: 40.416775, lng: -3.703790};
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 3,
+        zoom: 4,
         center: madrid,
         disableDefaultUI: true,
         zoomControl: true,
