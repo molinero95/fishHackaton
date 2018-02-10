@@ -1,10 +1,10 @@
-{
-"id": "1",
+[{
+"id" : 1,
 "name": "My fishssssssssss",
-"coords" : {
-  "lat" : [1,2,3,4,5],
-  "lng" : [1,2,3,4,5]
-},
+"coords" : [
+    {"lat" : 0, "lng" : 1 },
+    {"lat" : 3, "lng" : 2 }
+],
 "color" : "red",
 "idInfo" : "1"
-}
+}]
