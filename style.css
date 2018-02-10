@@ -33,13 +33,11 @@ body, html{
 
 }
 #iconos > img {
-    height: auto;
-    width: 20%;
+    height: 5rem;
+    width: 5rem;
     margin: 0.5rem;
     
 }
 .border{
-    border-image-width: 10px;
-    border: solid black ;
     border-radius: 100px;
 }
