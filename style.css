@@ -39,7 +39,8 @@ body, html{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    margin-left: 10px;
+    margin-right: 10px;
 }
 #iconos span > img {
     height: 5rem;
@@ -67,4 +68,5 @@ hr{
 .border{
     border-radius: 100px;
     border-image: 0px;
+    background: white;
 }
