@@ -7,11 +7,6 @@ function loadMap(data){
     generatePolygons(data, map)
 }
 
-let addListenersOnPolygon = function(polygon) {
-    google.maps.event.addListener(polygon, 'click', function (event) {
-        showHideInfo();
-    });  
-}
 
 function generatePolygon(path, color){
     console.log(color);
@@ -34,7 +29,7 @@ function generatePolygons(data, map){
         });
         let polygon = generatePolygon(coords, element.color);
         polygon.setMap(map);
-        addListenersOnPolygon(polygon);
+        addListenersOnPolygon(polygon,element);
         
     });
 }

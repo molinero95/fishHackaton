@@ -2,23 +2,33 @@ $(() => {
     $("#layoutInfo").hide();
 });
 
-function load(){
+function load() {
     let repo = new jsonRepository();
     repo.getFishingGrounds((err, res) => {
-        if(err){    //ya veremos
-            
+        if (err) {    //ya veremos
+
         }
-        else{
+        else {
             //console.log(JSON.parse(res));
             loadMap(res);
         }
     });
-    
+
 }
 
-function showHideInfo(){    //param
-    if($("#layoutInfo").is(":visible"))
+
+let addListenersOnPolygon = function (polygon, element) {
+    google.maps.event.addListener(polygon, 'click', function (event) {
+        showHideInfo(element);
+    });
+}
+
+function showHideInfo(fGround) {    //param
+    if ($("#layoutInfo").is(":visible")) {
         $("#layoutInfo").hide();
-    else
+    }
+    else {
+        $("#layoutInfo").html(fGround.name);
         $("#layoutInfo").show();
+    }
 }
