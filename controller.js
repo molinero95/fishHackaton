@@ -78,7 +78,7 @@ function showMeasure(){
 }
 
 function showTime(){
-
+    //
 }
 
 function showForbidden() {
