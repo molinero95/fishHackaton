@@ -3,7 +3,7 @@ $(() => {
     $("#contactLayout").hide();
     $("#nav-contact-tab").on("click", showContact);
     $("#nav-home-tab").on("click", showHome);
-    $("#artBtn").on("click", showInfo);
+    $("#artBtn").on("click", showMethodsAvailable);
     $("#measureBtn").on("click", showMeasure);
     $("#moreBtn").on("click", showMore);
     $("#forbiddenBtn").on("click", showForbidden);
@@ -69,8 +69,10 @@ function getInfoById(infoId) {
     return info;
 }
 
+//antiguo showInfo
 function showMethodsAvailable(){
-
+    let res = $("<h3>").text("hola");
+    $("#infoContainer").append(res);
 };
 
 function showMeasure(){
