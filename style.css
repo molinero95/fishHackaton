@@ -1,5 +1,18 @@
-
-#map {
+body, html{
     height: 100%;
+}
+#map {
+    height: auto;
     width: 100%;
+}
+
+#myLayout{
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+#layoutInfo {
+    width: 30%;
+    border-left: 3px solid black;
 }

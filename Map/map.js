@@ -9,7 +9,7 @@ function loadMap(){
 
 let addListenersOnPolygon = function(polygon) {
     google.maps.event.addListener(polygon, 'click', function (event) {
-      alert(polygon.indexID);
+        showHideInfo();
     });  
 }
 
