@@ -26,3 +26,20 @@ body, html{
     text-align: center;
     padding-bottom: 4px;
 }
+
+#iconos{
+    display: flex;
+    flex-direction: row;
+
+}
+#iconos > img {
+    height: auto;
+    width: 20%;
+    margin: 0.5rem;
+    
+}
+.border{
+    border-image-width: 10px;
+    border: solid black ;
+    border-radius: 100px;
+}
