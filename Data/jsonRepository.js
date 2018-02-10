@@ -1,6 +1,6 @@
 "use strict";
 
-var urlBase = "http://localhost:8000/fishackathon";
+var urlBase = document.URL.substr(0,document.URL.lastIndexOf('/'));
 function jsonRepository() {
     this.getData = function (urlRel, callback) {
         $.ajax({
