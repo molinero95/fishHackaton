@@ -15,8 +15,13 @@
     <script>
         var _repo = new jsonRepository();
 
-        _repo.getFishingGrounds((data) => {
-            alert(data[0].name);
+        _repo.getFishingGrounds((err,data) => {
+            if(err){
+                alert("Error al leer los caladeros");
+            }
+            else{
+                alert(data[0].name);
+            }
         });
 
     </script>

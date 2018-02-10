@@ -1,10 +1,10 @@
 "use strict";
 
+var urlBase = "http://localhost:8000/fishackaton";
 function jsonRepository() {
-
-    this.getFishingGrounds = function (callback) {
+    this.getData = function (urlRel, callback) {
         $.ajax({
-            url: "http://localhost:8000/fishackaton/JSON/fishingGrounds.json",
+            url: urlBase + urlRel,
             type: 'GET',
             dataType: 'json',
             cors: true,
@@ -13,16 +13,27 @@ function jsonRepository() {
             headers: {
                 'Access-Control-Allow-Origin': '*',
             },
-            beforeSend: function (xhr) {
-                // xhr.setRequestHeader ("Authorization", "Basic " + btoa(""));
-            },
             success: function (data) {
-                alert(data);
-                callback(data);
+                callback(null,data);
             },
             error: function (xhr, ajaxOptions, thrownError) {
-                alert(thrownError);
+                callback(thrownError);
+                alert("Se ha producido un error " + thrownError);
             }
         });
-    }
+    };
+
+    this.getFishingGrounds = function (callback) {
+        this.getData("/JSON/fishingGrounds.json", (err,data) => {
+            callback(err,data);
+        });
+    };
+
+    this.getShips = function (callback){
+        this.getData("/JSON/ships.json", (err,data) =>{
+            callback(err,data);
+        });
+    };
+
+
 };
