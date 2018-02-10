@@ -1,9 +1,127 @@
-[{
+[
+{
+"id": "3",
+"minimumSizes" :
+[   
+    {"latinName" : "Sardina pilchardus", "comercialName" : "Sardina", "size" : "11"},
+    {"latinName" : "Engraulis encrasicholus", "comercialName" : "Boqueron", "size" : "12"},
+    {"latinName" : "Merluccius merluccius", "comercialName" : "Merluza", "size" : "27"},
+    {"latinName" : "Paguellus bogaraveo", "comercialName" : "Besugo/Voraz", "size" : "27"},
+    {"latinName" : "Scomber spp", "comercialName" : "Caballa", "size" : "20"},
+    {"latinName" : "Trachurus trachurus", "comercialName" : "Jurel", "size" : "15"},
+    {"latinName" : "Pagrus pagrus", "comercialName" : "Pargo", "size" : "15"},
+    {"latinName" : "Dicologoglossa", "comercialName" : "Acedia", "size" : "15"},
+    {"latinName" : "Loligo vulgaris", "comercialName" : "Calamar", "size" : "*"},
+    {"latinName" : "Belone belone", "comercialName" : "Aguja", "size" : "25"},
+    {"latinName" : "Pollachius pollachius", "comercialName" : "Abadejo", "size" : "30"},
+    {"latinName" : "Conger conger", "comercialName" : "Congrio", "size" : "58"},
+    {"latinName" : "Sparus aurata", "comercialName" : "Dorada", "size" : "19"},
+    {"latinName" : "Platichthys flesus", "comercialName" : "Platija", "size" : "25"},
+    {"latinName" : "Pleuronectes platessa", "comercialName" : "Solla", "size" : "25"},
+    {"latinName" : "Psetta maxima", "comercialName" : "Rodaballo", "size" : "30"}
+],
+
+"restrictedSpecies" : [
+    "Pesca de voraz o besugo",
+    "Los buques que ejerzan este tipo de pesca deberán contar con las licencias y permisos correspondientes.",
+    "En esta zona, únicamente podrá realizarse la pesca de voraz o besugo (Pagellus bogaraveo) mediante el arte denominado voracera. Las dimensiones de las voraceras y los anzuelos están limitadas, y no se podrá superar un máximo de 2400 anzuelos, ni de 30 voraceras por buque.",
+    "No se podrá faenar durante más de cinco días por semana, debiendo existir un descanso semanal de al menos 48 horas ininterrumpidas. En cualquier caso, la pesca con voracera no podrá realizarse durante más de 140 días al año, y nunca durante el periodo comprendido entre el 1 de febrero y el 31 de marzo, ambos inclusive, de cada año.",
+    "Orden AAA/1589/2012, de 17 de julio, por la que se regula la pesquería del voraz (Pagellus bogaraveo) con el arte denominado voracera en el Estrecho de Gibraltar. http://www.boe.es/boe/dias/2012/07/18/pdfs/BOE-A-2012-9652.pdf"
+],
+
+"methodsAvailable" : [
+    "Artes de arrastre de fondo",
+    "Los buques que ejerzan la pesca con artes de arrastre de fondo deberán contar con las correspondientes licencias y permisos.",
+    "Este tipo de pesca queda prohibida en fondos de menos de 50 metros de profundidad.",
+    "No se podrá faenar durante más de cinco días por semana, debiéndose suspender la actividad pesquera con artes de arrastre de fondo durante sábados y domingos.",
+    "REAL DECRETO 632/1993, de 3 de mayo, por el que se regula el ejercicio de la pesca de “arrastre de fondo” en el Golfo de Cádiz.",
+    "http://www.boe.es/boe/dias/1993/05/18/pdfs/A14863-14865.pdf",
+    
+    "Pesca de arte menor (artes de enmalle, aparejos de anzuelo y trampas)",
+    "Los buques que ejerzan este tipo de pesca deberán contar con las licencias y permisos correspondientes, además de estar inscritos en el censo de Flota Pesquera Operativa.",
+    "Las embarcaciones a remo o a vela no podrán ejercer actividades pesqueras en aguas exteriores, y las embarcaciones con motor fuera de borda solo podrán hacerlo a una distancia máxima de la costa de dos millas.",
+    "Las dimensiones de los diferentes útiles de pesca, así como la potencia y la eslora de los buques que la ejercen están restringidos. Está prohibida la tenencia a bordo y la utilización de nasas dirigidas a la captura de peces.",
+    "No se podrá faenar durante más de cinco días por semana, debiendo existir un descanso semanal de al menos 48 horas ininterrumpidas.",
+    "Los aparejos y artes deberán estar señalizados adecuadamente.",
+    "REAL DECRETO 1428/1997, de 15 de septiembre, por el que se regula la pesca con artes menores en el caladero del Golfo de Cádiz.",
+    "http://www.boe.es/boe/dias/1997/10/01/pdfs/A28585-28587.pdf"
+],
+"more" : "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
+},
+
+
+{
 "id": "1",
-"minimumSizes" : [23,45],
-"fishingEffort" : "mucho ",
-"restrictedSpecies" : ["el pez de rio", "el pez on"],
-"methodsAvailable" : ["todo prohibido"],
-"expanded" : "",
-"more" : "nada mas"
-}]
+"minimumSizes" :
+[   
+    {"latinName" : "Conger conger", "comercialName" : "Congrio", "size" : "58"},
+    {"latinName" : "Belone belone", "comercialName" : "Aguja", "size" : "25"},
+    {"latinName" : "Scomberesox saurus saurus", "comercialName" : "Paparda", "size" : "18"},
+    {"latinName" : "Allosa fallax", "comercialName" : "Sábalo común", "size" : "30"},
+    {"latinName" : "Sardina pilchardus", "comercialName" : "Sardina", "size" : "11"},
+    {"latinName" : "Engraulis encrasicholus", "comercialName" : "Boqueron", "size" : "12"},
+    {"latinName" : "Gadus Morhua", "comercialName" : "Bacalao", "size" : "35"},
+    {"latinName" : "Melanogrammus aeglefinus", "comercialName" : "Eglefino", "size" : "30"},
+    {"latinName" : "Merlangius merlangus", "comercialName" : "Merlan", "size" : "23"},
+    {"latinName" : "Pollachius pollachius", "comercialName" : "Abadejo", "size" : "30"},
+    {"latinName" : "Pollachius virens", "comercialName" : "Carbonero", "size" : "35"},
+    {"latinName" : "Molva molva", "comercialName" : "Maruca", "size" : "63"},
+    {"latinName" : "Merluccius merluccius", "comercialName" : "Merluza", "size" : "27"}
+],
+
+"restrictedSpecies" : [
+    "Pesca de langosta con nasas",
+    "La pesca de langosta deberá realizase en fondos de un mínimo de 80 brazas (147 metros, aproximadamente) de profundidad. Estará limitada al periodo comprendido entre el 1 de julio y el 15 de septiembre de cada año, y podrá ser capturada únicamente con nasas (longitud máxima: 80 cm; diámetro máximo: 50cm), con un máximo de 350 nasas por embarcación.",
+    "ORDEN APA/1589/2005, de 31 de mayo, por la que se establece un plan para la pesca de langosta con nasas, en determinada zona del Cantábrico Oriental.",
+    "http://www.boe.es/boe/dias/2005/06/01/pdfs/A18461-18462.pdf",
+
+    "Pesca de sardina",
+    "El periodo autorizado para ejercer la pesca de sardina será de cinco días a la semana cada buque, con un descanso mínimo de 48 horas continuadas.",
+    "Orden AAA/1512/2014, de 30 de julio, por la que se establece un plan de gestión para la sardina (Sardina pilchardus) de las aguas ibéricas (VIIIc y IXa).",
+    "https://www.boe.es/boe/dias/2014/08/14/pdfs/BOE-A-2014-8731.pdf"
+],
+
+"methodsAvailable" : [
+    "Pesca con artes de arrastre de fondo",
+    "Los buques que ejerzan este tipo de pesca deberán estar inscritos en el censo de Flota Pesquera Operativa, y poseer la licencia correspondiente. Las dimensiones de los buques están restringidas.",
+    "Se podrá ejercer pesca de arrastre  de fondo, un máximo de 5 días por semana, con un descanso de al menos 48 horas ininterrumpidas. La profundidad mínima autorizada del fondo es de 100 metros.",
+    "Las dimensiones mínimas de las mallas utilizadas están restringidas en función de las especies a capturar, siendo el tamaño mínimo de 40 mm, en cualquier caso.",
+    "Queda prohibido el uso de artes de arrastre pelágico, de tangones o de cualquier dispositivo que produzca un efecto de reducción de la malla, así como la pesca de anchoa, sardina, bonito del norte o cualquier otra especie de túnidos con artes de arrastre.",
+    "REAL DECRETO 1441/1999, de 10 de septiembre, por el que se regula el ejercicio de la pesca con artes de arrastre de fondo en el caladero nacional del Cantábrico y Noroeste.",
+    "http://www.boe.es/boe/dias/1999/10/20/pdfs/A36835-36837.pdf",
+    
+    "Pesca con artes de cerco",
+    "Los buques que ejerzan la pesca con artes d cerco deberán tener al menos 15 metros de eslora entre perpendiculares, o 18 metros de eslora total.",
+    "REAL DECRETO 429/2004, de 12 de marzo, por el que se establecen medidas de ordenación de la flota pesquera de cerco.",
+    "http://www.boe.es/boe/dias/2004/03/16/pdfs/A11557-11558.pdf"
+],
+"more" : "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]

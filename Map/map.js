@@ -1,10 +1,15 @@
+"use strict";
 function loadMap(data){
     var madrid = {lat: 40.416775, lng: -3.703790};
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 3,
         center: madrid
     });
-    generatePolygons(data, map)
+    google.maps.event.addListener(map, "click", function(event) {
+        //limpia la ventana de info
+        showHideInfo();
+    });
+    generatePolygons(data, map);
 }
 
 
