@@ -1,5 +1,8 @@
 $(() => {
     $("#layoutInfo").hide();
+    $("#contactLayout").hide();
+    $("#nav-contact-tab").on("click", showContact);
+    $("#nav-home-tab").on("click", showHome);
 });
 
 let fishingGrounds = null;
@@ -21,26 +24,33 @@ function load() {
 let addListenersOnPolygon = function (polygon, element) {
     google.maps.event.addListener(polygon, 'click', function (event) {
         showHideInfo(element);
+        region = true;
     });
 }
 
 function showHideInfo(fGround) {    //param
-    if ($("#layoutInfo").is(":visible")) {
+    if ($("#layoutInfo").is(":visible") && !region) {
         $("#layoutInfo").hide();
     }
-    else {
-        var info = getInfoById(fGround.idInfo);
+    else if ($("#layoutInfo").is(":visible") && region) {    //modficar los datos de layoutInfo
+        $("#layoutInfo > h2").text(fGround.name);
 
-        let restrictedSpeciesHtml = "";
-
-        info.restrictedSpecies.forEach(element => {
-            restrictedSpeciesHtml += ("<br>" + element);
-        });
-
-        $("#layoutInfo").html(restrictedSpeciesHtml);
+    }
+    else if (!$("#layoutInfo").is(":visible") && region) {
+        $("#layoutInfo > h2").text(fGround.name);
         $("#layoutInfo").show();
     }
+    //Si no es visible y tocamos agua no hacemos nada
+}
 
+function showHome() {
+    $("#mapLayout").show();
+    $("#contactLayout").hide();
+}
+
+function showContact() {
+    $("#mapLayout").hide();
+    $("#contactLayout").show();
 }
 
 function getInfoById(infoId) {

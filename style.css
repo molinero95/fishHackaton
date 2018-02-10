@@ -2,20 +2,12 @@ body, html{
     height: 100%;
 }
 #map {
-    /* height: auto; */
+    height: auto;
     width: 100%;
 }
 
-#title {
-    height: 10%;
-    text-align: center;
 
-    background: -webkit-radial-gradient(rgb(106, 255, 254), rgb(67, 91, 176));
-    background: radial-gradient(rgb(106, 255, 254), rgb(67, 91, 176));
-    
-}
-
-#myLayout{
+#mapLayout{
     display: flex;
     justify-content: flex-start;
     height: 90%;
@@ -23,6 +15,31 @@ body, html{
 
 #layoutInfo {
     width: 30%;
-    border-left: 3px solid black;    
+    border-left: 3px solid black; 
+    border-top: 3px solid black;   
 
+}
+
+#layoutInfo > h2{
+    background: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+#iconos{
+    display: flex;
+    flex-direction: row;
+
+}
+#iconos > img {
+    height: auto;
+    width: 20%;
+    margin: 0.5rem;
+    
+}
+.border{
+    border-image-width: 10px;
+    border: solid black ;
+    border-radius: 100px;
 }

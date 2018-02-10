@@ -34,16 +34,35 @@
 */
     </script>
     <!--Menu nav?-->
-    <div id="title" class="col-md-12">
-      <h1>Título de la aplicación</h1>
-    </div>
-    <div id="myLayout">
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
+                aria-selected="true">Home</a>
+            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
+                aria-selected="false">Contact</a>
+        </div>
+    </nav>
+    <div id="mapLayout">
         <div id="map">
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLcHPb0jtpNFs83fZobeJ0HZUCFc-0w_s&callback=load"></script>
         </div>
         <div id="layoutInfo">
-            <p>hola mundo</p>
+            <h2 id="titulo"></h2>
+            <div id="iconos">
+                <img class="border" src="Icons/fishingArtSF.png">
+                <img class="border" src="Icons/measure.png">
+                <img src="Icons/time.jpg">
+                <img src="Icons/forbiddenFish.jpg">
+            </div>
         </div>
+    </div>
+    <div id="contactLayout">
+        <p>Realizado por: </p>
+        <p>Andrei Ionut Vaduva</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
     </div>
 </body>
 
