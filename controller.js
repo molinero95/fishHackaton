@@ -3,7 +3,17 @@ $(() => {
 });
 
 function load(){
-    loadMap();
+    let repo = new jsonRepository();
+    repo.getFishingGrounds((err, res) => {
+        if(err){    //ya veremos
+
+        }
+        else{
+            console.log(res);
+            loadMap({data: res});
+        }
+    });
+    
 }
 
 function showHideInfo(){    //param
@@ -11,6 +21,4 @@ function showHideInfo(){    //param
         $("#layoutInfo").hide();
     else
         $("#layoutInfo").show();
-
-
 }

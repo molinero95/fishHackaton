@@ -1,10 +1,10 @@
-function loadMap(){
+function loadMap(data){
     var madrid = {lat: 40.416775, lng: -3.703790};
     var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 3,
         center: madrid
     });
-    generatePolygons({}, map)
+    generatePolygons(data, map)
 }
 
 let addListenersOnPolygon = function(polygon) {
@@ -26,9 +26,9 @@ function generatePolygon(path){
 //TODO poner las coordenadas de fichero
 //Por ahora demo de como será
 function generatePolygons(data, map){
-
+    console.log(data);
     //console.log(data);
-    let ubications = Object.keys(data);
+    /*let ubications = Object.keys(data);
     for(let i = 0; i < ubications.length; i++){
         //console.log(ubications);
         let positions = Object.keys(data[ubications[i]]);
@@ -37,6 +37,6 @@ function generatePolygons(data, map){
         }
         //console.log(data[ubications[i]]);
         
-    }
+    }*/
 }
 
