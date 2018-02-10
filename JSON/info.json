@@ -1,278 +1,448 @@
 [
-
-{
-    "id": "1",
-    "minimumSizes" :
-    [   
-        {"latinName" : "Conger conger", "comercialName" : "Congrio", "size" : "58"},
-        {"latinName" : "Belone belone", "comercialName" : "Aguja", "size" : "25"},
-        {"latinName" : "Scomberesox saurus saurus", "comercialName" : "Paparda", "size" : "18"},
-        {"latinName" : "Allosa fallax", "comercialName" : "Sábalo común", "size" : "30"},
-        {"latinName" : "Sardina pilchardus", "comercialName" : "Sardina", "size" : "11"},
-        {"latinName" : "Engraulis encrasicholus", "comercialName" : "Boqueron", "size" : "12"},
-        {"latinName" : "Gadus Morhua", "comercialName" : "Bacalao", "size" : "35"},
-        {"latinName" : "Melanogrammus aeglefinus", "comercialName" : "Eglefino", "size" : "30"},
-        {"latinName" : "Merlangius merlangus", "comercialName" : "Merlan", "size" : "23"},
-        {"latinName" : "Pollachius pollachius", "comercialName" : "Abadejo", "size" : "30"},
-        {"latinName" : "Pollachius virens", "comercialName" : "Carbonero", "size" : "35"},
-        {"latinName" : "Molva molva", "comercialName" : "Maruca", "size" : "63"},
-        {"latinName" : "Merluccius merluccius", "comercialName" : "Merluza", "size" : "27"}
-    ],
-    
-    "restrictedSpecies" : [
-        "Pesca de langosta con nasas",
-        "La pesca de langosta deberá realizase en fondos de un mínimo de 80 brazas (147 metros, aproximadamente) de profundidad. Estará limitada al periodo comprendido entre el 1 de julio y el 15 de septiembre de cada año, y podrá ser capturada únicamente con nasas (longitud máxima: 80 cm; diámetro máximo: 50cm), con un máximo de 350 nasas por embarcación.",
-        "ORDEN APA/1589/2005, de 31 de mayo, por la que se establece un plan para la pesca de langosta con nasas, en determinada zona del Cantábrico Oriental.",
-        "http://www.boe.es/boe/dias/2005/06/01/pdfs/A18461-18462.pdf",
-    
-        "Pesca de sardina",
-        "El periodo autorizado para ejercer la pesca de sardina será de cinco días a la semana cada buque, con un descanso mínimo de 48 horas continuadas.",
-        "Orden AAA/1512/2014, de 30 de julio, por la que se establece un plan de gestión para la sardina (Sardina pilchardus) de las aguas ibéricas (VIIIc y IXa).",
-        "https://www.boe.es/boe/dias/2014/08/14/pdfs/BOE-A-2014-8731.pdf"
-    ],
-    
-    "methodsAvailable" : [
-        "Pesca con artes de arrastre de fondo",
-        "Los buques que ejerzan este tipo de pesca deberán estar inscritos en el censo de Flota Pesquera Operativa, y poseer la licencia correspondiente. Las dimensiones de los buques están restringidas.",
-        "Se podrá ejercer pesca de arrastre  de fondo, un máximo de 5 días por semana, con un descanso de al menos 48 horas ininterrumpidas. La profundidad mínima autorizada del fondo es de 100 metros.",
-        "Las dimensiones mínimas de las mallas utilizadas están restringidas en función de las especies a capturar, siendo el tamaño mínimo de 40 mm, en cualquier caso.",
-        "Queda prohibido el uso de artes de arrastre pelágico, de tangones o de cualquier dispositivo que produzca un efecto de reducción de la malla, así como la pesca de anchoa, sardina, bonito del norte o cualquier otra especie de túnidos con artes de arrastre.",
-        "REAL DECRETO 1441/1999, de 10 de septiembre, por el que se regula el ejercicio de la pesca con artes de arrastre de fondo en el caladero nacional del Cantábrico y Noroeste.",
-        "http://www.boe.es/boe/dias/1999/10/20/pdfs/A36835-36837.pdf",
-        
-        "Pesca con artes de cerco",
-        "Los buques que ejerzan la pesca con artes d cerco deberán tener al menos 15 metros de eslora entre perpendiculares, o 18 metros de eslora total.",
-        "REAL DECRETO 429/2004, de 12 de marzo, por el que se establecen medidas de ordenación de la flota pesquera de cerco.",
-        "http://www.boe.es/boe/dias/2004/03/16/pdfs/A11557-11558.pdf"
-    ],
-    "more" : "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
-},
-
-{
-    "id": "2",
-    "minimumSizes" :
-    [   
-        
-    ],
-    
-    "restrictedSpecies" : [
-       
-    ],
-    
-    "methodsAvailable" : [
-       
-    ],
-    "more" : ""
-},
-
-
-{
-"id": "3",
-"minimumSizes" :
-[   
-    {"latinName" : "Sardina pilchardus", "comercialName" : "Sardina", "size" : "11"},
-    {"latinName" : "Engraulis encrasicholus", "comercialName" : "Boqueron", "size" : "12"},
-    {"latinName" : "Merluccius merluccius", "comercialName" : "Merluza", "size" : "27"},
-    {"latinName" : "Paguellus bogaraveo", "comercialName" : "Besugo/Voraz", "size" : "27"},
-    {"latinName" : "Scomber spp", "comercialName" : "Caballa", "size" : "20"},
-    {"latinName" : "Trachurus trachurus", "comercialName" : "Jurel", "size" : "15"},
-    {"latinName" : "Pagrus pagrus", "comercialName" : "Pargo", "size" : "15"},
-    {"latinName" : "Dicologoglossa", "comercialName" : "Acedia", "size" : "15"},
-    {"latinName" : "Loligo vulgaris", "comercialName" : "Calamar", "size" : "*"},
-    {"latinName" : "Belone belone", "comercialName" : "Aguja", "size" : "25"},
-    {"latinName" : "Pollachius pollachius", "comercialName" : "Abadejo", "size" : "30"},
-    {"latinName" : "Conger conger", "comercialName" : "Congrio", "size" : "58"},
-    {"latinName" : "Sparus aurata", "comercialName" : "Dorada", "size" : "19"},
-    {"latinName" : "Platichthys flesus", "comercialName" : "Platija", "size" : "25"},
-    {"latinName" : "Pleuronectes platessa", "comercialName" : "Solla", "size" : "25"},
-    {"latinName" : "Psetta maxima", "comercialName" : "Rodaballo", "size" : "30"}
-],
-
-"restrictedSpecies" : [
-    "Pesca de voraz o besugo",
-    "Los buques que ejerzan este tipo de pesca deberán contar con las licencias y permisos correspondientes.",
-    "En esta zona, únicamente podrá realizarse la pesca de voraz o besugo (Pagellus bogaraveo) mediante el arte denominado voracera. Las dimensiones de las voraceras y los anzuelos están limitadas, y no se podrá superar un máximo de 2400 anzuelos, ni de 30 voraceras por buque.",
-    "No se podrá faenar durante más de cinco días por semana, debiendo existir un descanso semanal de al menos 48 horas ininterrumpidas. En cualquier caso, la pesca con voracera no podrá realizarse durante más de 140 días al año, y nunca durante el periodo comprendido entre el 1 de febrero y el 31 de marzo, ambos inclusive, de cada año.",
-    "Orden AAA/1589/2012, de 17 de julio, por la que se regula la pesquería del voraz (Pagellus bogaraveo) con el arte denominado voracera en el Estrecho de Gibraltar. http://www.boe.es/boe/dias/2012/07/18/pdfs/BOE-A-2012-9652.pdf"
-],
-
-"methodsAvailable" : [
-    "Artes de arrastre de fondo",
-    "Los buques que ejerzan la pesca con artes de arrastre de fondo deberán contar con las correspondientes licencias y permisos.",
-    "Este tipo de pesca queda prohibida en fondos de menos de 50 metros de profundidad.",
-    "No se podrá faenar durante más de cinco días por semana, debiéndose suspender la actividad pesquera con artes de arrastre de fondo durante sábados y domingos.",
-    "REAL DECRETO 632/1993, de 3 de mayo, por el que se regula el ejercicio de la pesca de “arrastre de fondo” en el Golfo de Cádiz.",
-    "http://www.boe.es/boe/dias/1993/05/18/pdfs/A14863-14865.pdf",
-    
-    "Pesca de arte menor (artes de enmalle, aparejos de anzuelo y trampas)",
-    "Los buques que ejerzan este tipo de pesca deberán contar con las licencias y permisos correspondientes, además de estar inscritos en el censo de Flota Pesquera Operativa.",
-    "Las embarcaciones a remo o a vela no podrán ejercer actividades pesqueras en aguas exteriores, y las embarcaciones con motor fuera de borda solo podrán hacerlo a una distancia máxima de la costa de dos millas.",
-    "Las dimensiones de los diferentes útiles de pesca, así como la potencia y la eslora de los buques que la ejercen están restringidos. Está prohibida la tenencia a bordo y la utilización de nasas dirigidas a la captura de peces.",
-    "No se podrá faenar durante más de cinco días por semana, debiendo existir un descanso semanal de al menos 48 horas ininterrumpidas.",
-    "Los aparejos y artes deberán estar señalizados adecuadamente.",
-    "REAL DECRETO 1428/1997, de 15 de septiembre, por el que se regula la pesca con artes menores en el caladero del Golfo de Cádiz.",
-    "http://www.boe.es/boe/dias/1997/10/01/pdfs/A28585-28587.pdf"
-],
-"more" : "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
-},
-
-
-{
-    "id": "4",
-    "minimumSizes" :[   
-        {"latinName" : "Engraulis encrasicholus", "comercialName" : "Boqueron", "size" : "12"},
-        {"latinName" : "Merluccius merluccius", "comercialName" : "Merluza", "size" : "27"},
-        {"latinName" : "Sardina pilchardus", "comercialName" : "Sardina", "size" : "11"},
-        {"latinName" : "Mullus spp", "comercialName" : "Salmonete", "size" : "11"},
-        {"latinName" : "Sparus aurata", "comercialName" : "Dorada", "size" : "19"},
-        {"latinName" : "Lophius spp ", "comercialName" : "Rape", "size" : "30"},
-        {"latinName" : "Xiphias gladius", "comercialName" : "Pez espada", "size" : "120"},
-        {"latinName" : "Diplodus spp", "comercialName" : "Sargo", "size" : "15"},
-        {"latinName" : "Epinephelus spp", "comercialName" : "Mero", "size" : "45"},
-        {"latinName" : "Solea vulgaris", "comercialName" : "Lenguado", "size" : "20"},
-        {"latinName" : "Lepidorhombus spp", "comercialName" : "Gallo", "size" : "15"}
-    ],
-    
-    "restrictedSpecies" : [
-
-    "Especies autorizadas para su captura con artes de cerco",
-    "Las especies autorizadas para su captura con arte de cerco son las siguientes:",
-
-    "Aguja (Belone belone)", 
-    "Alacha (Sardinella aurita)",
-    "Anjova (Pomatomus saltator)",
-    "Bacoreta (Euthynnus alletteratus)",
-    "Boga (Boops boops)",
-    "Bonito (Sarda sarda)",
-    "Boquerón (Engraulis encrasicolus)",
-    "Breca (Pagellus erythrinus)",
-    "Caballa (Scomber spp.)",
-    "Chopa (Spondyliosoma cantharus)",
-    "Japuta (Brama brama)",
-    "Jureles (Trachurus spp y Caranx spp)",
-    "Lisa (Mugil spp.)",
-    "Melva (Auxis rochei)",
-    "Palometon (Lichia Amia)",
-    "Salema (Sarpa salpa)",
-    "Sardina (Sardina pilchardus)",
-    "Sargo (Diplodus sargus)",
-
-   "Sólo entre los días 15 de julio y 15 de noviembre de cada año, ambos inclusive, podrán capturarse, además de las mencionadas, las siguientes especies:", 
-
-    "Calamar (Loligo vulgaris)",
-    "Dorada (Sparus aurata)",
-    "Lecha o serviola (Seriola dumerili)",
-    "Palometa blanca (Trachynotus ovatus)",
-
-    "Entre los meses de noviembre y abril, ambos inclusive, podrá capturarse la especie denominada como Caramel (Spicara smaris).", 
-    "Independientemente de las especies citadas, podrá capturarse durante todo el año cualquier otra especie no sometida a un régimen especial de protección, siempre que no superen un porcentaje del 2% referido al peso de todas las capturas existentes a bordo en el momento del desembarque.",
-    "Orden ARM/2529/2011, de 21 de septiembre, por la que se regula la pesca con artes de cerco en el caladero Mediterráneo.",
-    "http://www.boe.es/boe/dias/2011/09/24/pdfs/BOE-A-2011-15094.pdf",
-
-    "Pesquería de cebo vivo",
-    "La pesquería de cebo vivo únicamente podrá practicarse como auxiliar de la de túnidos y, por lo tanto, exclusivamente por los buques autorizados para la pesca de túnidos con cañas y cebo vivo, y estará sometida a las siguientes normas:", 
-    "Las capturas que se efectúen de cebo vivo solo podrán ser utilizadas como carnada.", 
-    "Los buques estarán equipados con tanques que permitan conservar vivo el cebo. En cada operación dedicada a la captura de cebo vivo la cantidad obtenida del mismo no podrá exceder en ningún caso la capacidad de los tanques mencionados.",
-    "Las embarcaciones no podrán utilizar más de un bote auxiliar para las tareas de pesca con luz artificial en la captura de cebo vivo o carnada.",
-
-    "Orden ARM/2529/2011, de 21 de septiembre, por la que se regula la pesca con artes de cerco en el caladero Mediterráneo.",
-    "http://www.boe.es/boe/dias/2011/09/24/pdfs/BOE-A-2011-15094.pdf",
-
-    "Estacionalidad en la pesca del raor y el verderol",
-    "Se prohíbe la pesca de Raor (Xyrichthys novacula) en el periodo comprendido entre el 1 de abril y el 15 de agosto de cada año, ambos inclusive. No obstante en la zona marítima que comprende el perímetro de 6 millas náuticas de distancia a la costa, medidas a partir de las líneas de base rectas, alrededor de las islas de Ibiza y Formentera, la prohibición será aplicable entre los días 1 de abril y 31 de agosto, ambos inclusive.", 
-    "Se prohíbe la pesca entre los días 1 de julio y 15 de septiembre de cada año, ambos inclusive, de la especie conocida localmente como «verderol», entendiendo por tal los ejemplares de «pez de limón» (Seriola durmerili) que no alcancen la talla de 30 cm. No obstante, en la zona marítima que comprende el perímetro de 6 millas náuticas de distancia a la costa, medidas a partir de las líneas de base rectas, alrededor de las islas de Ibiza y Formentera la prohibición será aplicable entre los días 1 de julio y 30 de septiembre ambos inclusive.",
-    "ORDEN APA/831/2005, de 30 de marzo, por la que se establece una veda temporal para la pesca del «Raor» y del «Verderol» en las aguas exteriores de las Illes Balears.",
-    "https://www.boe.es/boe/dias/2005/04/02/pdfs/A11400-11400.pdf",
-
-    "Pesca de la lampuga",
-    "El arte de pesca de la lampuga, denominado lampuguera, podrá ejercerse en fondos cuta profundidad mínima sea de 30 metros. La pesca de esta especies se realizará únicamente en el periodo comprendido entre los días 25 de agosto y 31 de diciembre de cada año, debiendo descansar los buques durante un tiempo no inferior a 48 horas ininterrumpidas semanales.",
-    "Orden AAA/1688/2013, de 10 de septiembre, por la que se regula la pesca de la lampuga (Coryphaena hippurus) y especies asociadas, con el arte de lampuguera, en las aguas exteriores del archipiélago balear.",
-    "https://www.boe.es/boe/dias/2013/09/20/pdfs/BOE-A-2013-9767.pdf",
-
-    "Pesca del voraz",
-    "Los buques que ejerzan este tipo de pesca deberán contar con las licencias y permisos correspondientes.",
-    "Únicamente podrá realizarse la pesca de voraz o besugo (Pagellus bogaraveo) mediante el arte denominado voracera. Las dimensiones de las voraceras y los anzuelos están limitadas, y no se podrá superar un máximo de 2400 anzuelos, ni de 30 voraceras por buque.",
-    "No se podrá faenar durante más de cinco días por semana, debiendo existir un descanso semanal de al menos 48 horas ininterrumpidas. En cualquier caso, la pesca con voracera no podrá realizarse durante más de 140 días al año, y nunca durante el periodo comprendido entre el 1 de febrero y el 31 de marzo, ambos inclusive, de cada año.",
-    "Orden AAA/1589/2012, de 17 de julio, por la que se regula la pesquería del voraz (Pagellus bogaraveo) con el arte denominado voracera en el Estrecho de Gibraltar",
-    "http://www.boe.es/boe/dias/2012/07/18/pdfs/BOE-A-2012-9652.pdf",
-
-    "Pesca de la gamba rosada",
-    "Para la pesca de gamba rosada, únicamente se permite el uso de artes de arrastre armandos con copos de malla de forma cuadrada con un abertura mínima de 40 mm, cuyo torzal no podrá superar los 3 mm de diámetro.",
-    "Queda prohibida la utilización de elementos destinados a reducir la malla o la instalación de dispositivos que, instalados en la zona inferior de la red, faciliten la superación de obstáculos rocosos durante la acción de arrastre sobre el fondo.",
-
-    "Orden AAA/923/2013, de 16 de mayo, por la que se regula la pesca de gamba rosada (Aristeus antennatus) con arte de arrastre de fondo en determinadas zonas marítimas próximas a Palamós.",
-    "https://www.boe.es/boe/dias/2013/05/27/pdfs/BOE-A-2013-5555.pdf",
-
-    "Pesca de especies demersales",
-    "Para minimizar el riesgo de deterioro de la población reproductora y por lo tanto, sea posible su explotación sostenible, se hace aconsejable limitar el esfuerzo pesquero con artes de arrastre de fondo, palangre de fondo y redes de enmalle fijas de fondo dirigidas a la captura de especies demersales. Por ello, se considera como zona restringida de pesca de estas especies, la delimitada por las siguientes coordenadas geográficas:",
-    "Latitud 42º 40,0’ norte; longitud 004º 20,0’ este.", 
-    "Latitud 42º 40,0’ norte; longitud 005º 00,0’ este.",
-    "Latitud 43º 00,0’ norte; longitud 004º 20,0’ este.", 
-    "Latitud 43º 00,0’ norte; longitud 005º 00,0’ este.",
-    "Así, solo podrán faenar en estas zonas con el objetivo de capturar especies demersales, aquellos buques que cuenten con las correspondientes licencias o permisos.",
-
-    "Orden AAA/1857/2012, de 22 de agosto, por la que se establece una zona restringida para la pesca de especies demersales en el Golfo de León",
-    "http://www.boe.es/boe/dias/2012/08/30/pdfs/BOE-A-2012-11221.pdf"
-],
-    
-    "methodsAvailable" : [
-        "Artes de cerco",
-        "Con carácter general, queda prohibido el uso de redes de cerco en fondos inferiores a 35 metros. No obstante, a menos de 300 metros de distancia a la costa, la prohibición se amplía a fondos inferiores a 50 metros. Queda prohibido el uso de redes de cerco a una profundidad inferior al 70 por ciento de la altura de caída de la red.",
-        "La potencia máxima propulsora de los buques de cerco no será superior a 450 caballos de vapor, y su eslora será de mínimo 9 metros.",
-        "Orden ARM/2529/2011, de 21 de septiembre, por la que se regula la pesca con artes de cerco en el caladero Mediterráneo.",
-        "http://www.boe.es/boe/dias/2011/09/24/pdfs/BOE-A-2011-15094.pdf",
-        
-        "Artes de arrastre de fondo",
-        "La pesca de arrastre sólo podrá ejercerse en fondos superiores a 50 metros, con unas mallas cuyas dimensiones mínimas no podrán ser menores a 40 milímetros. Además queda terminantemente prohibido el uso de artes de arrastre pelágico con artes que reduzcan el efecto de la dimensión de la malla y el uso de tangones.",
-        "Los buques que faenen mediante artes de arrastre de fondo deberán tener unas dimensiones de eslora entre perpendiculares comprendida entre 12 y 24 metros, con una potencia máxima no superior a 500 CV.",
-        "REAL DECRETO 1440/1999, de 10 de septiembre, por el que se regula el ejercicio de la pesca con artes de arrastre de fondo en el caladero nacional del Mediterráneo.",
-        "https://www.boe.es/boe/dias/1999/10/20/pdfs/A36833-36835.pdf",
-        
-        "Artes fijas y menores",
-        "El periodo autorizado para ejercer la pesca con artes fijos o artes menores será, para cada buque, de cinco días por semana y 16 horas por día. En todo caso, los aparejos y artes de pesca incluidos en este real decreto, deberán ser retirados de su calamento durante 41 horas continuadas por semana y transportados a puerto.",
-        "REAL DECRETO 395/2006, de 31 de marzo, por el que se establecen medidas de ordenación de la flota pesquera que opera con artes fijos y artes menores en el Mediterráneo.",
-        "http://www.boe.es/boe/dias/2006/04/20/pdfs/A15187-15188.pdf",
-    ],
-    "more" : "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
-},
-
-{
-    "id": "5",
-    "minimumSizes" :[   
-        {"latinName" : "Spondyliosoma cantharus", "comercialName" : "Chopa", "size" : "19"},
-        {"latinName" : "Thunnus albacares", "comercialName" : "Rabil", "size" : "3,2 kg"},
-        {"latinName" : "Trachurus trachurus", "comercialName" : "Jurel", "size" : "12"},
-        {"latinName" : "Sarpa salpa", "comercialName" : "Salema", "size" : "24"},
-        {"latinName" : "Sparus aurata", "comercialName" : "Dorada", "size" : "19"},
-        {"latinName" : "Sardina pilchardus", "comercialName" : "Sardina", "size" : "11"},
-        {"latinName" : "Pagrus pagrus", "comercialName" : "Pargo", "size" : "15"},
-        {"latinName" : "Merluccius merluccius", "comercialName" : "Merluza", "size" : "27"},
-        {"latinName" : "Thunnus thyunnus", "comercialName" : "Atun rojo", "size" : "6.4"},
-        {"latinName" : "Sconber japonicus", "comercialName" : "Estornino", "size" : "18"},
-        {"latinName" : "Mugil auratus", "comercialName" : "Lisa", "size" : "14"},
-        {"latinName" : "Belone belone", "comercialName" : "Aguja", "size" : "25"},
-        {"latinName" : "Engraulis encrasicholus", "comercialName" : "Boqueron", "size" : "12"},
-        {"latinName" : "Diplodus spp", "comercialName" : "Sargo", "size" : "15"}
-    ],
-    
-    "restrictedSpecies" : [
-       "No especificado"
-    ],
-    
-    "methodsAvailable" : [
-        "Artes autorizadas",
-        "Se permitirá la pesca en el Caladero Canario en las siguientes modalidades:",
-        "Artes menores: aparejos de anzuelo (línea de mano, línea o amaño para pesca del alto, caña, puyón, palangre de fondo, curricán o currica), artes de trampa (nasas y tambor para morenas), artes de izada (pandorga, gueldera o tarralla), artes de enmalle (trasmallo y cazonal), artes de cerco (sardinal o traíña, chichorro de aire o hamaca y salemera) y vara de peto.",
-        "Atuneros cañeros que se dediquen en exclusiva a esta actividad, pudiendo utilizarse cañas y liñas con cebo vivo para túnidos y artes de cerco para la captura de carnada.",
-        "Se prohíbe:",
-        "Cualquier forma de pesca de arrastre, tanto si se realiza con arte remolcado por embarcación como si se practica sin embarcación desde la orilla.",
-        "La práctica del <<jigging>>.",
-        "Cuando se utilice el curricán o currica, se prohíbe el uso de depresores que permitan que el aparejo pesque por el fondo.",
-        "Solo determinadas especies están autorizadas para ser pescadas con artes de cerco, y su utilización como cebo, vivo o muerto, o como carnada, se encuentra restringida.",
-        "Orden AAA/2536/2015, de 30 de noviembre, por la que se regulan las artes y modalidades de pesca marítima y se establece un plan de gestión para los buques de los censos del Caladero Nacional Canario.",
-        "https://www.boe.es/boe/dias/2015/12/01/pdfs/BOE-A-2015-13003.pdf"
-    ],
-    "more" : "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
-}
-
+    {
+        "id": "1",
+        "minimumSizes": [
+            {
+                "latinName": "Conger conger",
+                "comercialName": "Congrio",
+                "size": "58"
+            },
+            {
+                "latinName": "Belone belone",
+                "comercialName": "Aguja",
+                "size": "25"
+            },
+            {
+                "latinName": "Scomberesox saurus saurus",
+                "comercialName": "Paparda",
+                "size": "18"
+            },
+            {
+                "latinName": "Allosa fallax",
+                "comercialName": "Sábalo común",
+                "size": "30"
+            },
+            {
+                "latinName": "Sardina pilchardus",
+                "comercialName": "Sardina",
+                "size": "11"
+            },
+            {
+                "latinName": "Engraulis encrasicholus",
+                "comercialName": "Boqueron",
+                "size": "12"
+            },
+            {
+                "latinName": "Gadus Morhua",
+                "comercialName": "Bacalao",
+                "size": "35"
+            },
+            {
+                "latinName": "Melanogrammus aeglefinus",
+                "comercialName": "Eglefino",
+                "size": "30"
+            },
+            {
+                "latinName": "Merlangius merlangus",
+                "comercialName": "Merlan",
+                "size": "23"
+            },
+            {
+                "latinName": "Pollachius pollachius",
+                "comercialName": "Abadejo",
+                "size": "30"
+            },
+            {
+                "latinName": "Pollachius virens",
+                "comercialName": "Carbonero",
+                "size": "35"
+            },
+            {
+                "latinName": "Molva molva",
+                "comercialName": "Maruca",
+                "size": "63"
+            },
+            {
+                "latinName": "Merluccius merluccius",
+                "comercialName": "Merluza",
+                "size": "27"
+            }
+        ],
+        "restrictedSpecies": [
+            "Pesca de langosta con nasas",
+            "La pesca de langosta deberá realizase en fondos de un mínimo de 80 brazas (147 metros, aproximadamente) de profundidad. Estará limitada al periodo comprendido entre el 1 de julio y el 15 de septiembre de cada año, y podrá ser capturada únicamente con nasas (longitud máxima: 80 cm; diámetro máximo: 50cm), con un máximo de 350 nasas por embarcación.",
+            "ORDEN APA/1589/2005, de 31 de mayo, por la que se establece un plan para la pesca de langosta con nasas, en determinada zona del Cantábrico Oriental.",
+            "http://www.boe.es/boe/dias/2005/06/01/pdfs/A18461-18462.pdf",
+            "Pesca de sardina",
+            "El periodo autorizado para ejercer la pesca de sardina será de cinco días a la semana cada buque, con un descanso mínimo de 48 horas continuadas.",
+            "Orden AAA/1512/2014, de 30 de julio, por la que se establece un plan de gestión para la sardina (Sardina pilchardus) de las aguas ibéricas (VIIIc y IXa).",
+            "https://www.boe.es/boe/dias/2014/08/14/pdfs/BOE-A-2014-8731.pdf"
+        ],
+        "methodsAvailable": [
+            "Pesca con artes de arrastre de fondo",
+            "Los buques que ejerzan este tipo de pesca deberán estar inscritos en el censo de Flota Pesquera Operativa, y poseer la licencia correspondiente. Las dimensiones de los buques están restringidas.",
+            "Se podrá ejercer pesca de arrastre  de fondo, un máximo de 5 días por semana, con un descanso de al menos 48 horas ininterrumpidas. La profundidad mínima autorizada del fondo es de 100 metros.",
+            "Las dimensiones mínimas de las mallas utilizadas están restringidas en función de las especies a capturar, siendo el tamaño mínimo de 40 mm, en cualquier caso.",
+            "Queda prohibido el uso de artes de arrastre pelágico, de tangones o de cualquier dispositivo que produzca un efecto de reducción de la malla, así como la pesca de anchoa, sardina, bonito del norte o cualquier otra especie de túnidos con artes de arrastre.",
+            "REAL DECRETO 1441/1999, de 10 de septiembre, por el que se regula el ejercicio de la pesca con artes de arrastre de fondo en el caladero nacional del Cantábrico y Noroeste.",
+            "http://www.boe.es/boe/dias/1999/10/20/pdfs/A36835-36837.pdf",
+            "Pesca con artes de cerco",
+            "Los buques que ejerzan la pesca con artes d cerco deberán tener al menos 15 metros de eslora entre perpendiculares, o 18 metros de eslora total.",
+            "REAL DECRETO 429/2004, de 12 de marzo, por el que se establecen medidas de ordenación de la flota pesquera de cerco.",
+            "http://www.boe.es/boe/dias/2004/03/16/pdfs/A11557-11558.pdf"
+        ],
+        "more": "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
+    },
+    {
+        "id": "2",
+        "minimumSizes": [],
+        "restrictedSpecies": [],
+        "methodsAvailable": [],
+        "more": ""
+    },
+    {
+        "id": "3",
+        "minimumSizes": [
+            {
+                "latinName": "Sardina pilchardus",
+                "comercialName": "Sardina",
+                "size": "11"
+            },
+            {
+                "latinName": "Engraulis encrasicholus",
+                "comercialName": "Boqueron",
+                "size": "12"
+            },
+            {
+                "latinName": "Merluccius merluccius",
+                "comercialName": "Merluza",
+                "size": "27"
+            },
+            {
+                "latinName": "Paguellus bogaraveo",
+                "comercialName": "Besugo/Voraz",
+                "size": "27"
+            },
+            {
+                "latinName": "Scomber spp",
+                "comercialName": "Caballa",
+                "size": "20"
+            },
+            {
+                "latinName": "Trachurus trachurus",
+                "comercialName": "Jurel",
+                "size": "15"
+            },
+            {
+                "latinName": "Pagrus pagrus",
+                "comercialName": "Pargo",
+                "size": "15"
+            },
+            {
+                "latinName": "Dicologoglossa",
+                "comercialName": "Acedia",
+                "size": "15"
+            },
+            {
+                "latinName": "Loligo vulgaris",
+                "comercialName": "Calamar",
+                "size": "*"
+            },
+            {
+                "latinName": "Belone belone",
+                "comercialName": "Aguja",
+                "size": "25"
+            },
+            {
+                "latinName": "Pollachius pollachius",
+                "comercialName": "Abadejo",
+                "size": "30"
+            },
+            {
+                "latinName": "Conger conger",
+                "comercialName": "Congrio",
+                "size": "58"
+            },
+            {
+                "latinName": "Sparus aurata",
+                "comercialName": "Dorada",
+                "size": "19"
+            },
+            {
+                "latinName": "Platichthys flesus",
+                "comercialName": "Platija",
+                "size": "25"
+            },
+            {
+                "latinName": "Pleuronectes platessa",
+                "comercialName": "Solla",
+                "size": "25"
+            },
+            {
+                "latinName": "Psetta maxima",
+                "comercialName": "Rodaballo",
+                "size": "30"
+            }
+        ],
+        "restrictedSpecies": [
+            "Pesca de voraz o besugo",
+            "Los buques que ejerzan este tipo de pesca deberán contar con las licencias y permisos correspondientes.",
+            "En esta zona, únicamente podrá realizarse la pesca de voraz o besugo (Pagellus bogaraveo) mediante el arte denominado voracera. Las dimensiones de las voraceras y los anzuelos están limitadas, y no se podrá superar un máximo de 2400 anzuelos, ni de 30 voraceras por buque.",
+            "No se podrá faenar durante más de cinco días por semana, debiendo existir un descanso semanal de al menos 48 horas ininterrumpidas. En cualquier caso, la pesca con voracera no podrá realizarse durante más de 140 días al año, y nunca durante el periodo comprendido entre el 1 de febrero y el 31 de marzo, ambos inclusive, de cada año.",
+            "Orden AAA/1589/2012, de 17 de julio, por la que se regula la pesquería del voraz (Pagellus bogaraveo) con el arte denominado voracera en el Estrecho de Gibraltar. http://www.boe.es/boe/dias/2012/07/18/pdfs/BOE-A-2012-9652.pdf"
+        ],
+        "methodsAvailable": [
+            "Artes de arrastre de fondo",
+            "Los buques que ejerzan la pesca con artes de arrastre de fondo deberán contar con las correspondientes licencias y permisos.",
+            "Este tipo de pesca queda prohibida en fondos de menos de 50 metros de profundidad.",
+            "No se podrá faenar durante más de cinco días por semana, debiéndose suspender la actividad pesquera con artes de arrastre de fondo durante sábados y domingos.",
+            "REAL DECRETO 632/1993, de 3 de mayo, por el que se regula el ejercicio de la pesca de “arrastre de fondo” en el Golfo de Cádiz.",
+            "http://www.boe.es/boe/dias/1993/05/18/pdfs/A14863-14865.pdf",
+            "Pesca de arte menor (artes de enmalle, aparejos de anzuelo y trampas)",
+            "Los buques que ejerzan este tipo de pesca deberán contar con las licencias y permisos correspondientes, además de estar inscritos en el censo de Flota Pesquera Operativa.",
+            "Las embarcaciones a remo o a vela no podrán ejercer actividades pesqueras en aguas exteriores, y las embarcaciones con motor fuera de borda solo podrán hacerlo a una distancia máxima de la costa de dos millas.",
+            "Las dimensiones de los diferentes útiles de pesca, así como la potencia y la eslora de los buques que la ejercen están restringidos. Está prohibida la tenencia a bordo y la utilización de nasas dirigidas a la captura de peces.",
+            "No se podrá faenar durante más de cinco días por semana, debiendo existir un descanso semanal de al menos 48 horas ininterrumpidas.",
+            "Los aparejos y artes deberán estar señalizados adecuadamente.",
+            "REAL DECRETO 1428/1997, de 15 de septiembre, por el que se regula la pesca con artes menores en el caladero del Golfo de Cádiz.",
+            "http://www.boe.es/boe/dias/1997/10/01/pdfs/A28585-28587.pdf"
+        ],
+        "more": "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
+    },
+    {
+        "id": "4",
+        "minimumSizes": [
+            {
+                "latinName": "Engraulis encrasicholus",
+                "comercialName": "Boqueron",
+                "size": "12"
+            },
+            {
+                "latinName": "Merluccius merluccius",
+                "comercialName": "Merluza",
+                "size": "27"
+            },
+            {
+                "latinName": "Sardina pilchardus",
+                "comercialName": "Sardina",
+                "size": "11"
+            },
+            {
+                "latinName": "Mullus spp",
+                "comercialName": "Salmonete",
+                "size": "11"
+            },
+            {
+                "latinName": "Sparus aurata",
+                "comercialName": "Dorada",
+                "size": "19"
+            },
+            {
+                "latinName": "Lophius spp ",
+                "comercialName": "Rape",
+                "size": "30"
+            },
+            {
+                "latinName": "Xiphias gladius",
+                "comercialName": "Pez espada",
+                "size": "120"
+            },
+            {
+                "latinName": "Diplodus spp",
+                "comercialName": "Sargo",
+                "size": "15"
+            },
+            {
+                "latinName": "Epinephelus spp",
+                "comercialName": "Mero",
+                "size": "45"
+            },
+            {
+                "latinName": "Solea vulgaris",
+                "comercialName": "Lenguado",
+                "size": "20"
+            },
+            {
+                "latinName": "Lepidorhombus spp",
+                "comercialName": "Gallo",
+                "size": "15"
+            }
+        ],
+        "restrictedSpecies": [
+            "Especies autorizadas para su captura con artes de cerco",
+            "Las especies autorizadas para su captura con arte de cerco son las siguientes:",
+            "Aguja (Belone belone)",
+            "Alacha (Sardinella aurita)",
+            "Anjova (Pomatomus saltator)",
+            "Bacoreta (Euthynnus alletteratus)",
+            "Boga (Boops boops)",
+            "Bonito (Sarda sarda)",
+            "Boquerón (Engraulis encrasicolus)",
+            "Breca (Pagellus erythrinus)",
+            "Caballa (Scomber spp.)",
+            "Chopa (Spondyliosoma cantharus)",
+            "Japuta (Brama brama)",
+            "Jureles (Trachurus spp y Caranx spp)",
+            "Lisa (Mugil spp.)",
+            "Melva (Auxis rochei)",
+            "Palometon (Lichia Amia)",
+            "Salema (Sarpa salpa)",
+            "Sardina (Sardina pilchardus)",
+            "Sargo (Diplodus sargus)",
+            "Sólo entre los días 15 de julio y 15 de noviembre de cada año, ambos inclusive, podrán capturarse, además de las mencionadas, las siguientes especies:",
+            "Calamar (Loligo vulgaris)",
+            "Dorada (Sparus aurata)",
+            "Lecha o serviola (Seriola dumerili)",
+            "Palometa blanca (Trachynotus ovatus)",
+            "Entre los meses de noviembre y abril, ambos inclusive, podrá capturarse la especie denominada como Caramel (Spicara smaris).",
+            "Independientemente de las especies citadas, podrá capturarse durante todo el año cualquier otra especie no sometida a un régimen especial de protección, siempre que no superen un porcentaje del 2% referido al peso de todas las capturas existentes a bordo en el momento del desembarque.",
+            "Orden ARM/2529/2011, de 21 de septiembre, por la que se regula la pesca con artes de cerco en el caladero Mediterráneo.",
+            "http://www.boe.es/boe/dias/2011/09/24/pdfs/BOE-A-2011-15094.pdf",
+            "Pesquería de cebo vivo",
+            "La pesquería de cebo vivo únicamente podrá practicarse como auxiliar de la de túnidos y, por lo tanto, exclusivamente por los buques autorizados para la pesca de túnidos con cañas y cebo vivo, y estará sometida a las siguientes normas:",
+            "Las capturas que se efectúen de cebo vivo solo podrán ser utilizadas como carnada.",
+            "Los buques estarán equipados con tanques que permitan conservar vivo el cebo. En cada operación dedicada a la captura de cebo vivo la cantidad obtenida del mismo no podrá exceder en ningún caso la capacidad de los tanques mencionados.",
+            "Las embarcaciones no podrán utilizar más de un bote auxiliar para las tareas de pesca con luz artificial en la captura de cebo vivo o carnada.",
+            "Orden ARM/2529/2011, de 21 de septiembre, por la que se regula la pesca con artes de cerco en el caladero Mediterráneo.",
+            "http://www.boe.es/boe/dias/2011/09/24/pdfs/BOE-A-2011-15094.pdf",
+            "Estacionalidad en la pesca del raor y el verderol",
+            "Se prohíbe la pesca de Raor (Xyrichthys novacula) en el periodo comprendido entre el 1 de abril y el 15 de agosto de cada año, ambos inclusive. No obstante en la zona marítima que comprende el perímetro de 6 millas náuticas de distancia a la costa, medidas a partir de las líneas de base rectas, alrededor de las islas de Ibiza y Formentera, la prohibición será aplicable entre los días 1 de abril y 31 de agosto, ambos inclusive.",
+            "Se prohíbe la pesca entre los días 1 de julio y 15 de septiembre de cada año, ambos inclusive, de la especie conocida localmente como «verderol», entendiendo por tal los ejemplares de «pez de limón» (Seriola durmerili) que no alcancen la talla de 30 cm. No obstante, en la zona marítima que comprende el perímetro de 6 millas náuticas de distancia a la costa, medidas a partir de las líneas de base rectas, alrededor de las islas de Ibiza y Formentera la prohibición será aplicable entre los días 1 de julio y 30 de septiembre ambos inclusive.",
+            "ORDEN APA/831/2005, de 30 de marzo, por la que se establece una veda temporal para la pesca del «Raor» y del «Verderol» en las aguas exteriores de las Illes Balears.",
+            "https://www.boe.es/boe/dias/2005/04/02/pdfs/A11400-11400.pdf",
+            "Pesca de la lampuga",
+            "El arte de pesca de la lampuga, denominado lampuguera, podrá ejercerse en fondos cuta profundidad mínima sea de 30 metros. La pesca de esta especies se realizará únicamente en el periodo comprendido entre los días 25 de agosto y 31 de diciembre de cada año, debiendo descansar los buques durante un tiempo no inferior a 48 horas ininterrumpidas semanales.",
+            "Orden AAA/1688/2013, de 10 de septiembre, por la que se regula la pesca de la lampuga (Coryphaena hippurus) y especies asociadas, con el arte de lampuguera, en las aguas exteriores del archipiélago balear.",
+            "https://www.boe.es/boe/dias/2013/09/20/pdfs/BOE-A-2013-9767.pdf",
+            "Pesca del voraz",
+            "Los buques que ejerzan este tipo de pesca deberán contar con las licencias y permisos correspondientes.",
+            "Únicamente podrá realizarse la pesca de voraz o besugo (Pagellus bogaraveo) mediante el arte denominado voracera. Las dimensiones de las voraceras y los anzuelos están limitadas, y no se podrá superar un máximo de 2400 anzuelos, ni de 30 voraceras por buque.",
+            "No se podrá faenar durante más de cinco días por semana, debiendo existir un descanso semanal de al menos 48 horas ininterrumpidas. En cualquier caso, la pesca con voracera no podrá realizarse durante más de 140 días al año, y nunca durante el periodo comprendido entre el 1 de febrero y el 31 de marzo, ambos inclusive, de cada año.",
+            "Orden AAA/1589/2012, de 17 de julio, por la que se regula la pesquería del voraz (Pagellus bogaraveo) con el arte denominado voracera en el Estrecho de Gibraltar",
+            "http://www.boe.es/boe/dias/2012/07/18/pdfs/BOE-A-2012-9652.pdf",
+            "Pesca de la gamba rosada",
+            "Para la pesca de gamba rosada, únicamente se permite el uso de artes de arrastre armandos con copos de malla de forma cuadrada con un abertura mínima de 40 mm, cuyo torzal no podrá superar los 3 mm de diámetro.",
+            "Queda prohibida la utilización de elementos destinados a reducir la malla o la instalación de dispositivos que, instalados en la zona inferior de la red, faciliten la superación de obstáculos rocosos durante la acción de arrastre sobre el fondo.",
+            "Orden AAA/923/2013, de 16 de mayo, por la que se regula la pesca de gamba rosada (Aristeus antennatus) con arte de arrastre de fondo en determinadas zonas marítimas próximas a Palamós.",
+            "https://www.boe.es/boe/dias/2013/05/27/pdfs/BOE-A-2013-5555.pdf",
+            "Pesca de especies demersales",
+            "Para minimizar el riesgo de deterioro de la población reproductora y por lo tanto, sea posible su explotación sostenible, se hace aconsejable limitar el esfuerzo pesquero con artes de arrastre de fondo, palangre de fondo y redes de enmalle fijas de fondo dirigidas a la captura de especies demersales. Por ello, se considera como zona restringida de pesca de estas especies, la delimitada por las siguientes coordenadas geográficas:",
+            "Latitud 42º 40,0’ norte; longitud 004º 20,0’ este.",
+            "Latitud 42º 40,0’ norte; longitud 005º 00,0’ este.",
+            "Latitud 43º 00,0’ norte; longitud 004º 20,0’ este.",
+            "Latitud 43º 00,0’ norte; longitud 005º 00,0’ este.",
+            "Así, solo podrán faenar en estas zonas con el objetivo de capturar especies demersales, aquellos buques que cuenten con las correspondientes licencias o permisos.",
+            "Orden AAA/1857/2012, de 22 de agosto, por la que se establece una zona restringida para la pesca de especies demersales en el Golfo de León",
+            "http://www.boe.es/boe/dias/2012/08/30/pdfs/BOE-A-2012-11221.pdf"
+        ],
+        "methodsAvailable": [
+            "Artes de cerco",
+            "Con carácter general, queda prohibido el uso de redes de cerco en fondos inferiores a 35 metros. No obstante, a menos de 300 metros de distancia a la costa, la prohibición se amplía a fondos inferiores a 50 metros. Queda prohibido el uso de redes de cerco a una profundidad inferior al 70 por ciento de la altura de caída de la red.",
+            "La potencia máxima propulsora de los buques de cerco no será superior a 450 caballos de vapor, y su eslora será de mínimo 9 metros.",
+            "Orden ARM/2529/2011, de 21 de septiembre, por la que se regula la pesca con artes de cerco en el caladero Mediterráneo.",
+            "http://www.boe.es/boe/dias/2011/09/24/pdfs/BOE-A-2011-15094.pdf",
+            "Artes de arrastre de fondo",
+            "La pesca de arrastre sólo podrá ejercerse en fondos superiores a 50 metros, con unas mallas cuyas dimensiones mínimas no podrán ser menores a 40 milímetros. Además queda terminantemente prohibido el uso de artes de arrastre pelágico con artes que reduzcan el efecto de la dimensión de la malla y el uso de tangones.",
+            "Los buques que faenen mediante artes de arrastre de fondo deberán tener unas dimensiones de eslora entre perpendiculares comprendida entre 12 y 24 metros, con una potencia máxima no superior a 500 CV.",
+            "REAL DECRETO 1440/1999, de 10 de septiembre, por el que se regula el ejercicio de la pesca con artes de arrastre de fondo en el caladero nacional del Mediterráneo.",
+            "https://www.boe.es/boe/dias/1999/10/20/pdfs/A36833-36835.pdf",
+            "Artes fijas y menores",
+            "El periodo autorizado para ejercer la pesca con artes fijos o artes menores será, para cada buque, de cinco días por semana y 16 horas por día. En todo caso, los aparejos y artes de pesca incluidos en este real decreto, deberán ser retirados de su calamento durante 41 horas continuadas por semana y transportados a puerto.",
+            "REAL DECRETO 395/2006, de 31 de marzo, por el que se establecen medidas de ordenación de la flota pesquera que opera con artes fijos y artes menores en el Mediterráneo.",
+            "http://www.boe.es/boe/dias/2006/04/20/pdfs/A15187-15188.pdf"
+        ],
+        "more": "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
+    },
+    {
+        "id": "5",
+        "minimumSizes": [
+            {
+                "latinName": "Spondyliosoma cantharus",
+                "comercialName": "Chopa",
+                "size": "19"
+            },
+            {
+                "latinName": "Thunnus albacares",
+                "comercialName": "Rabil",
+                "size": "3,2 kg"
+            },
+            {
+                "latinName": "Trachurus trachurus",
+                "comercialName": "Jurel",
+                "size": "12"
+            },
+            {
+                "latinName": "Sarpa salpa",
+                "comercialName": "Salema",
+                "size": "24"
+            },
+            {
+                "latinName": "Sparus aurata",
+                "comercialName": "Dorada",
+                "size": "19"
+            },
+            {
+                "latinName": "Sardina pilchardus",
+                "comercialName": "Sardina",
+                "size": "11"
+            },
+            {
+                "latinName": "Pagrus pagrus",
+                "comercialName": "Pargo",
+                "size": "15"
+            },
+            {
+                "latinName": "Merluccius merluccius",
+                "comercialName": "Merluza",
+                "size": "27"
+            },
+            {
+                "latinName": "Thunnus thyunnus",
+                "comercialName": "Atun rojo",
+                "size": "6.4"
+            },
+            {
+                "latinName": "Sconber japonicus",
+                "comercialName": "Estornino",
+                "size": "18"
+            },
+            {
+                "latinName": "Mugil auratus",
+                "comercialName": "Lisa",
+                "size": "14"
+            },
+            {
+                "latinName": "Belone belone",
+                "comercialName": "Aguja",
+                "size": "25"
+            },
+            {
+                "latinName": "Engraulis encrasicholus",
+                "comercialName": "Boqueron",
+                "size": "12"
+            },
+            {
+                "latinName": "Diplodus spp",
+                "comercialName": "Sargo",
+                "size": "15"
+            }
+        ],
+        "restrictedSpecies": [
+            "No especificado"
+        ],
+        "methodsAvailable": [
+            "Artes autorizadas",
+            "Se permitirá la pesca en el Caladero Canario en las siguientes modalidades:",
+            "Artes menores: aparejos de anzuelo (línea de mano, línea o amaño para pesca del alto, caña, puyón, palangre de fondo, curricán o currica), artes de trampa (nasas y tambor para morenas), artes de izada (pandorga, gueldera o tarralla), artes de enmalle (trasmallo y cazonal), artes de cerco (sardinal o traíña, chichorro de aire o hamaca y salemera) y vara de peto.",
+            "Atuneros cañeros que se dediquen en exclusiva a esta actividad, pudiendo utilizarse cañas y liñas con cebo vivo para túnidos y artes de cerco para la captura de carnada.",
+            "Se prohíbe:",
+            "Cualquier forma de pesca de arrastre, tanto si se realiza con arte remolcado por embarcación como si se practica sin embarcación desde la orilla.",
+            "La práctica del <<jigging>>.",
+            "Cuando se utilice el curricán o currica, se prohíbe el uso de depresores que permitan que el aparejo pesque por el fondo.",
+            "Solo determinadas especies están autorizadas para ser pescadas con artes de cerco, y su utilización como cebo, vivo o muerto, o como carnada, se encuentra restringida.",
+            "Orden AAA/2536/2015, de 30 de noviembre, por la que se regulan las artes y modalidades de pesca marítima y se establece un plan de gestión para los buques de los censos del Caladero Nacional Canario.",
+            "https://www.boe.es/boe/dias/2015/12/01/pdfs/BOE-A-2015-13003.pdf"
+        ],
+        "more": "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
+    }
 ]
