@@ -35,5 +35,40 @@ function jsonRepository() {
         });
     };
 
+    this.getInfoFishingGround = function (idFishingGround, callback){
+        this.getFishingGrounds ((err,fishingGraoundData)=>{
+            if(err || isNaN(idFishingGround)){
+                alert("Se ha producido un error al leer los caladeros!");
+                callback(err);
+            }
+            else{
+                this.getData("/JSON/info.json",(err,infoData)=>{
+                    if(err){
+                        alert("Se ha producido un error al leer la info del caladero");
+                        callback(err);
+                    }
+                    else{
+                        let found = false;
+                        let i = 0, j = 0;
+                        let sizeFishingGraound = fishingGraoundData.length;
+                        let sizeInfo = infoData.length;
+                        while(i < sizeFishingGraound && !found){
+                            if(idFishingGround === Number(fishingGraoundData[i].id)){
+                                while(j < sizeInfo && !found){
+                                    if(fishingGraoundData[i].idInfo === infoData[j].id){
+                                        found = true;
+                                        callback(null,infoData[j]);
+                                    }
+                                    j++;
+                                }
+                            }
+                            i++;
+                        }
+                    }
+                });
+                
+            }
+        });
+    }
 
 };
