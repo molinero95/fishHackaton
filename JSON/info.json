@@ -1,0 +1,9 @@
+[{
+"id": "1",
+"minimumSizes" : [23,45],
+"fishingEffort" : "mucho ",
+"restrictedSpecies" : ["el pez de rio", "el pez on"],
+"methodsAvailable" : ["todo prohibido"],
+"expanded" : "",
+"more" : "nada mas"
+}]
