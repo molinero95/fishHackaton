@@ -29,7 +29,8 @@ function generatePolygon(path, color){
         geodesic: true,
         strokeColor: color,
         strokeOpacity: 1.0,
-        strokeWeight: 2
+        strokeWeight: 2,
+        
     });
 }
 

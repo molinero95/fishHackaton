@@ -33,11 +33,11 @@ function showHideInfo(fGround) {    //param
         $("#layoutInfo").hide();
     }
     else if($("#layoutInfo").is(":visible") && region){    //modficar los datos de layoutInfo
-        $("#layoutInfo").html(fGround.name);
+        $("#layoutInfo > h2").text(fGround.name);
 
     }
     else if(!$("#layoutInfo").is(":visible") && region){
-        $("#layoutInfo").html(fGround.name);
+        $("#layoutInfo > h2").text(fGround.name);
         $("#layoutInfo").show();
     }
     //Si no es visible y tocamos agua no hacemos nada

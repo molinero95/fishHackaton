@@ -19,3 +19,10 @@ body, html{
     border-top: 3px solid black;   
 
 }
+
+#layoutInfo > h2{
+    background: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 4px;
+}
