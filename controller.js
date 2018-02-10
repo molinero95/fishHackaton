@@ -2,20 +2,21 @@ $(() => {
     $("#layoutInfo").hide();
 });
 
+let fishingGrounds = null;
+let infos = null;
+
+
 function load() {
     let repo = new jsonRepository();
     repo.getFishingGrounds((err, res) => {
-        if (err) {    //ya veremos
-
-        }
-        else {
-            //console.log(JSON.parse(res));
-            loadMap(res);
-        }
+        loadMap(res);
+        fishingGrounds = res;
     });
 
+    repo.getFishingGroundsInfo((err, res) => {
+        infos = res;
+    });
 }
-
 
 let addListenersOnPolygon = function (polygon, element) {
     google.maps.event.addListener(polygon, 'click', function (event) {
@@ -28,7 +29,27 @@ function showHideInfo(fGround) {    //param
         $("#layoutInfo").hide();
     }
     else {
-        $("#layoutInfo").html(fGround.name);
+        var info = getInfoById(fGround.idInfo);
+
+        let restrictedSpeciesHtml = "";
+
+        info.restrictedSpecies.forEach(element => {
+            restrictedSpeciesHtml += ("<br>" + element);
+        });
+
+        $("#layoutInfo").html(restrictedSpeciesHtml);
         $("#layoutInfo").show();
     }
+
+}
+
+function getInfoById(infoId) {
+    let info = null;
+    infos.some(function (obj) {
+        if (obj.id == infoId) {
+            info = obj;
+            return true;
+        }
+    });
+    return info;
 }

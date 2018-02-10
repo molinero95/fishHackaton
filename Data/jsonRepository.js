@@ -1,6 +1,7 @@
 "use strict";
 
-var urlBase = document.URL.substr(0,document.URL.lastIndexOf('/'));
+let urlBase = document.URL.substr(0, document.URL.lastIndexOf('/'));
+
 function jsonRepository() {
     this.getData = function (urlRel, callback) {
         $.ajax({
@@ -14,7 +15,7 @@ function jsonRepository() {
                 'Access-Control-Allow-Origin': '*',
             },
             success: function (data) {
-                callback(null,data);
+                callback(null, data);
             },
             error: function (xhr, ajaxOptions, thrownError) {
                 callback(thrownError);
@@ -24,51 +25,20 @@ function jsonRepository() {
     };
 
     this.getFishingGrounds = function (callback) {
-        this.getData("/JSON/fishingGrounds.json", (err,data) => {
-            callback(err,data);
+        this.getData("/JSON/fishingGrounds.json", (err, data) => {
+            callback(err, data);
         });
     };
 
-    this.getShips = function (callback){
-        this.getData("/JSON/ships.json", (err,data) =>{
-            callback(err,data);
+    this.getShips = function (callback) {
+        this.getData("/JSON/ships.json", (err, data) => {
+            callback(err, data);
         });
     };
 
-    this.getInfoFishingGround = function (idFishingGround, callback){
-        this.getFishingGrounds ((err,fishingGraoundData)=>{
-            if(err || isNaN(idFishingGround)){
-                alert("Se ha producido un error al leer los caladeros!");
-                callback(err);
-            }
-            else{
-                this.getData("/JSON/info.json",(err,infoData)=>{
-                    if(err){
-                        alert("Se ha producido un error al leer la info del caladero");
-                        callback(err);
-                    }
-                    else{
-                        let found = false;
-                        let i = 0, j = 0;
-                        let sizeFishingGraound = fishingGraoundData.length;
-                        let sizeInfo = infoData.length;
-                        while(i < sizeFishingGraound && !found){
-                            if(idFishingGround === Number(fishingGraoundData[i].id)){
-                                while(j < sizeInfo && !found){
-                                    if(fishingGraoundData[i].idInfo === infoData[j].id){
-                                        found = true;
-                                        callback(null,infoData[j]);
-                                    }
-                                    j++;
-                                }
-                            }
-                            i++;
-                        }
-                    }
-                });
-                
-            }
+    this.getFishingGroundsInfo = function (callback) {
+        this.getData("/JSON/info.json", (err, infoData) => {
+            callback(err, infoData);
         });
     }
-
 };
