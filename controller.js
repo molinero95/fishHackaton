@@ -6,11 +6,11 @@ function load(){
     let repo = new jsonRepository();
     repo.getFishingGrounds((err, res) => {
         if(err){    //ya veremos
-
+            
         }
         else{
-            console.log(res);
-            loadMap({data: res});
+            //console.log(JSON.parse(res));
+            loadMap(res);
         }
     });
     
