@@ -110,6 +110,7 @@ function stopSpeech() {
 
 //antiguo showInfo
 function showMethodsAvailable() {
+    $("hr").show();
     $(".activ").removeClass("activ");
     $("#artBtn").addClass("activ");
     clearData();
@@ -133,6 +134,7 @@ function showMethodsAvailable() {
 };
 
 function showMeasure() {
+    $("hr").hide();
     $(".activ").removeClass("activ");
     $("#measureBtn").addClass("activ");
     clearData();
@@ -163,6 +165,7 @@ function showMeasure() {
 };
 
 function showMore() {
+    $("hr").show();
     $(".activ").removeClass("activ");
     $("#moreBtn").addClass("activ");  
     clearData();
@@ -177,6 +180,7 @@ function showMore() {
 
 
 function showDefault() {
+    $("hr").show();
     clearData();
     $(".activ").removeClass("activ");
 
@@ -200,6 +204,7 @@ function showDefault() {
 
 
 function showForbidden() {
+    $("hr").show();
     clearData();
     $(".activ").removeClass("activ");
     $("#forbiddenBtn").addClass("activ");
