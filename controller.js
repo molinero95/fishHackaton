@@ -76,10 +76,10 @@ function getInfoById(infoId) {
     return info;
 }
 
-function parse (infoGround) {
+function parse (array) {
     let ret = "";
     let links = [];
-    infoGround.methodsAvailable.forEach((elem)=>{
+    array.forEach((elem)=>{
         elem += "</br>";
         if(elem.indexOf("http") > -1){
             links.push(elem);
@@ -119,12 +119,9 @@ function showMethodsAvailable() {
 
     //Titulo de las artes de pesca por caladero
     let aux = getInfoById(currentGround.idInfo);
-    //Sonido
-    let sound = '<button type="button" class="btn btn-primary" id="sound" onclick="speech()">Reproducir</button>';
-    container.prepend(sound);
 
     //Contenido
-    let correctData = parse(aux);
+    let correctData = parse(aux.methodsAvailable);
     $("#info").html(correctData.ret);
     
     //Posibles links
@@ -171,30 +168,56 @@ function showMeasure() {
 };
 
 function showMore() {
-    clearData();
     $(".activ").removeClass("activ");
-    $("#moreBtn").addClass("activ");
-
-    
+    $("#moreBtn").addClass("activ");  
+        clearData();
 };
 
-function showForbidden() {
+
+function showDefault() {
     clearData();
     $(".activ").removeClass("activ");
-    $("#forbiddenBtn").addClass("activ");
 
     //Vacia el contenedor y crea el parrafo
     let container = $("#infoContainer");
 
     //Titulo de las artes de pesca por caladero
     let aux = getInfoById(currentGround.idInfo);
-    let sound = '<button type="button" class="btn btn-primary" id="sound" onclick="speech()">Reproducir</button>';
-    container.prepend(sound);
 
     //Contenido
     let correctData = parse(aux);
-    console.log(correctData);1
     $("#info").html(correctData.ret);
+    
+    //Posibles links
+    correctData.links.forEach((elem)=>{
+        let link = $("<a>").attr("href", elem).html(elem);
+        $("#info").append(link);+ 
+        $("#info").append("</br>");
+    });
+};
+
+
+function showForbidden() {
+    clearData();
+    $(".activ").removeClass("activ");
+    $("#forbiddenBtn").addClass("activ");    
+
+    //Vacia el contenedor y crea el parrafo
+    let container = $("#infoContainer");
+
+    //Titulo de las artes de pesca por caladero
+    let aux = getInfoById(currentGround.idInfo);
+
+    //Contenido
+    let correctData = parse(aux.restrictedSpecies);
+    $("#info").html(correctData.ret);
+
+    //Posibles links
+    correctData.links.forEach((elem)=>{
+        let link = $("<a>").attr("href", elem).html(elem);
+        $("#info").append(link);+ 
+        $("#info").append("</br>");
+    });
 };
 
 function getActive(){

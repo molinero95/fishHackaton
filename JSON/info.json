@@ -76,7 +76,7 @@
             "ORDEN APA/1589/2005, de 31 de mayo, por la que se establece un plan para la pesca de langosta con nasas, en determinada zona del Cantábrico Oriental.",
             "http://www.boe.es/boe/dias/2005/06/01/pdfs/A18461-18462.pdf",
             "",
-            "<h3>Pesca de sardina<h3>",
+            "<h3>Pesca de sardina</h3>",
             "",
             "El periodo autorizado para ejercer la pesca de sardina será de cinco días a la semana cada buque, con un descanso mínimo de 48 horas continuadas.",
             "",
@@ -105,11 +105,11 @@
             "http://www.boe.es/boe/dias/2004/03/16/pdfs/A11557-11558.pdf"
         ],
         "speech": [
-            "Todos los buques deberán estar inscritos en los censos correspondientes y disponer de las licencias adecuadas, en función de las artes de pesca que ejerzan.",
-            "En general, no se permite faenar durante más de cinco días a la semana, debiendo  existir un descanso de al menos 48 horas ininterrumpidas.",
-            "Existen restricciones que afectan a las dimensiones de los buques, en función del tipo de artes que utilicen.",
-            "El periodo en el que está autorizada la pesca de langosta con nasas se encuentra limitado, así como la profundidad mínima de los fondos en los que se puede capturar este animal.",
-            "Para determinadas especies, se han establecido unas tallas mínimas que los ejemplares capturados deberán presentar para poder ser retenidos a bordo y comercializados."
+            "Los buques deberán estar inscritos en los censos correspondientes, y disponer de las licencias adecuadas.",
+            "No se permite faenar más de cinco días a la semana, con un descanso de al menos 48 horas ininterrumpidas.",
+            "Existen restricciones que afectan a las dimensiones de los buques en función de las artes de pesca.",
+            "El periodo hábil para la pesca de langosta con nasas es limitado, así como la profundidad mínima de los fondos en los que se puede capturar este animal.",
+            "Existen tallas mínimas para algunas especies, que deberán ser respetadas para su retención y comercialización."
         ],
         "more": "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
     },
@@ -243,10 +243,10 @@
             "http://www.boe.es/boe/dias/1997/10/01/pdfs/A28585-28587.pdf"
         ],
         "speech": [
-            "Todos los buques deberán estar inscritos en los censos correspondientes y disponer de las licencias adecuadas, en función de las artes de pesca que ejerzan.",
-            "En general, no se permite faenar durante más de cinco días a la semana, debiendo  existir un descanso de al menos 48 horas ininterrumpidas.",
-            "Existen restricciones que afectan a las dimensiones de los buques, en función del tipo de artes que utilicen.",
-            "La pesca de voraz o besugo se encuentra limitada a aquellos buques que cuenten con la correspondiente licencia para la pesca con voraceras. El periodo de pesca de este animal se encuentra restringido, así como el esfuerzo pesquero, que no podrá superar los 140 días al año."
+            "Los buques deberán estar inscritos en los censos correspondientes, y disponer de las licencias adecuadas.",
+            "No se permite faenar más de cinco días a la semana, con un descanso de al menos 48 horas ininterrumpidas.",
+            "Existen restricciones que afectan a las dimensiones de los buques en función de las artes de pesca.",
+            "Para la pesca del voraz o besugo, es necesario disponer de una licencia vigente para el uso de voraceras. El periodo de pesca de este animal se encuentra restringido, y el esfuerzo pesquero no podrá superar los 140 días al año."
         ],
         "more": "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
     },
@@ -345,7 +345,6 @@
             "Orden ARM/2529/2011, de 21 de septiembre, por la que se regula la pesca con artes de cerco en el caladero Mediterráneo.",
             "",
             "http://www.boe.es/boe/dias/2011/09/24/pdfs/BOE-A-2011-15094.pdf",
-            
             "<h3>Pesquería de cebo vivo</h3>",
             "",
             "La pesquería de cebo vivo únicamente podrá practicarse como auxiliar de la de túnidos y, por lo tanto, exclusivamente por los buques autorizados para la pesca de túnidos con cañas y cebo vivo, y estará sometida a las siguientes normas:",
@@ -358,9 +357,8 @@
             "",
             "Orden ARM/2529/2011, de 21 de septiembre, por la que se regula la pesca con artes de cerco en el caladero Mediterráneo.",
             "http://www.boe.es/boe/dias/2011/09/24/pdfs/BOE-A-2011-15094.pdf",
-            
             "<h3>Estacionalidad en la pesca del raor y el verderol</h3>",
-            "",            
+            "",
             "Se prohíbe la pesca de Raor (Xyrichthys novacula) en el periodo comprendido entre el 1 de abril y el 15 de agosto de cada año, ambos inclusive. No obstante en la zona marítima que comprende el perímetro de 6 millas náuticas de distancia a la costa, medidas a partir de las líneas de base rectas, alrededor de las islas de Ibiza y Formentera, la prohibición será aplicable entre los días 1 de abril y 31 de agosto, ambos inclusive.",
             "",
             "Se prohíbe la pesca entre los días 1 de julio y 15 de septiembre de cada año, ambos inclusive, de la especie conocida localmente como «verderol», entendiendo por tal los ejemplares de «pez de limón» (Seriola durmerili) que no alcancen la talla de 30 cm. No obstante, en la zona marítima que comprende el perímetro de 6 millas náuticas de distancia a la costa, medidas a partir de las líneas de base rectas, alrededor de las islas de Ibiza y Formentera la prohibición será aplicable entre los días 1 de julio y 30 de septiembre ambos inclusive.",
@@ -420,7 +418,7 @@
             "Orden ARM/2529/2011, de 21 de septiembre, por la que se regula la pesca con artes de cerco en el caladero Mediterráneo.",
             "http://www.boe.es/boe/dias/2011/09/24/pdfs/BOE-A-2011-15094.pdf",
             "",
-            "<h3>Artes de arrastre de fondo<h3>",
+            "<h3>Artes de arrastre de fondo</h3>",
             "",
             "La pesca de arrastre sólo podrá ejercerse en fondos superiores a 50 metros, con unas mallas cuyas dimensiones mínimas no podrán ser menores a 40 milímetros. Además queda terminantemente prohibido el uso de artes de arrastre pelágico con artes que reduzcan el efecto de la dimensión de la malla y el uso de tangones.",
             "",
@@ -438,14 +436,13 @@
             "http://www.boe.es/boe/dias/2006/04/20/pdfs/A15187-15188.pdf"
         ],
         "speech": [
-            "Los útiles de pesca, sus dimensiones, y las dimensiones y potencias de los buques se encuentran restringidos para las modalidades de pesca de cerco y de arrastre de fondo.",
-            "El esfuerzo de pesca para artes fijas y menores está limitado.",
-            "Solo algunas especies están autorizadas para su captura con artes de cerco.",
-            "La pesquería de cebo vivo como auxiliar a la pesca de túnidos está sometida a restricciones.",
-            "La pesca del raor, el verderol, la lampuga y el voraz o besugo únicamente podrá realizarse durante determinados periodos del año, respetando las épocas reproductivas de estas especies.",
-            "La pesca de la gamba rosada solo podrá realizarse mediante artes de arrastre, existiendo limitaciones en las dimensiones de las mallas utilizadas.",
+            "La dimensión y potencia permitida de los buques son limitadas, así como las artes permitidas, para la pesca de cerco y de arrastre de fondo.",
+            "El esfuerzo de pesca para artes fijas y menores está limitado, solo algunas especies están autorizadas para la captura con artes de cerco.",
+            "La pesquería de cebo vivo como auxiliar a la pesca de túnidos tiene restricciones.",
+            "La pesca del raor, el verderol, la lampuga y el voraz o besugo, deberá respetar las épocas reproductivas.",
+            "La pesca de la gamba rosada solo podrá realizarse mediante artes de arrastre, existiendo limitaciones en las dimensiones de las mallas.",
             "Existe una zona de pesca restringida de especies demersales.",
-            "Para determinadas especies, se han establecido unas tallas mínimas que los ejemplares capturados deberán presentar para poder ser retenidos a bordo y comercializados."
+            "Existen tallas mínimas para algunas especies, que deberán ser respetadas para su retención y comercialización."
         ],
         "more": "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
     },
@@ -539,7 +536,7 @@
             "",
             "Cualquier forma de pesca de arrastre, tanto si se realiza con arte remolcado por embarcación como si se practica sin embarcación desde la orilla.",
             "",
-            "<h3>La práctica del <<jigging>></h3>.",
+            "<h3>La práctica del <i>jigging</i></h3>",
             "",
             "Cuando se utilice el curricán o currica, se prohíbe el uso de depresores que permitan que el aparejo pesque por el fondo.",
             "",
@@ -550,9 +547,9 @@
             "https://www.boe.es/boe/dias/2015/12/01/pdfs/BOE-A-2015-13003.pdf"
         ],
         "speech": [
-            "Las artes de arrastre están prohibidas en este caladero en cualquiera de sus formas, así como la práctica del jigging o pesca vertical.",
-            "Solo determinadas especies están autorizadas para ser pescadas con artes de cerco, y su utilización como cebo, vivo o muerto, o como carnada, se encuentra restringida.",
-            "Para determinadas especies, se han establecido unas tallas mínimas que los ejemplares capturados deberán presentar para poder ser retenidos a bordo y comercializados."
+            "Las artes de arrastre están prohibidas en este caladero, así como la práctica del jigging o pesca vertical.",
+            "Solo determinadas especies están autorizadas para ser pescadas con artes de cerco, y su utilización como cebo, vivo, muerto, o como carnada, se encuentra restringida.",
+            "Existen tallas mínimas para algunas especies, que deberán ser respetadas para su retención y comercialización."
         ],
         "more": "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
     }
