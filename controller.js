@@ -141,6 +141,8 @@ function showMeasure() {
     $("#measureBtn").addClass("activ");
     clearData();
 
+    
+
 };
 
 function showMore() {
