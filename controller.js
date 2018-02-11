@@ -76,10 +76,12 @@ function getInfoById(infoId) {
     return info;
 }
 
-function leer (infoGround) {
+function parse (infoGround) {
     let ret = "";
     let links = [];
+    infoGround.methodsAvailable.splice(0,1);
     infoGround.methodsAvailable.forEach((elem)=>{
+        elem += "</br>";
         if(elem.indexOf("http") > -1){
             links.push(elem);
         }
@@ -97,17 +99,14 @@ function showMethodsAvailable() {
     let infoGround = getInfoById(currentGround.idInfo);
     let res = $("<h3>").text(infoGround.methodsAvailable[0]);
     $("#infoContainer").prepend(res);
-    
     //Contenido
-    let correctData = leer(infoGround);
-    $("#info").text(correctData.ret);
+    let correctData = parse(infoGround);
+    $("#info").html(correctData.ret);
     //Posibles links
     correctData.links.forEach((elem)=>{
-        let link = $("<a>").attr("href", elem).text(elem);
+        let link = $("<a>").attr("href", elem).html(elem);
         $("#info").append(link);
     });
-
-
 };
 
 function showMeasure() {
