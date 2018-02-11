@@ -90,3 +90,13 @@ hr{
 h3{
     text-align: center;
 }
+
+#info > h3{
+    font-family: "Times New Roman", Times, serif;
+    color: brown;
+}
+
+#info{
+    font-family: Georgia, 'Times New Roman', serif;
+    color: black;
+}
