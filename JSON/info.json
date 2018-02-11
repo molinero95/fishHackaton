@@ -113,13 +113,18 @@
         ],
         "more": "<h3>Diario de a bordo</h3> Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
     },
+
     {
         "id": "2",
         "minimumSizes": [],
         "restrictedSpecies": [],
         "methodsAvailable": [],
+        "speech" : [
+            "Tanto na pesca como na pesca comercial e na pesca recreativa, incluindo a pesca subaquática, é proibido manter a bordo, desembarcar, transportar, armazenar, exibir ou vender espécimes que não tenham o tamanho mínimo ou peso mínimo legalmente estabelecido."
+        ],
         "more": ""
     },
+
     {
         "id": "3",
         "minimumSizes": [
