@@ -411,8 +411,8 @@
             "http://www.boe.es/boe/dias/2012/08/30/pdfs/BOE-A-2012-11221.pdf"
         ],
         "methodsAvailable": [
-            "<h3>Artes de cerco</h3>",
             "",
+            "<h3>Artes de cerco</h3>",
             "Con carácter general, queda prohibido el uso de redes de cerco en fondos inferiores a 35 metros. No obstante, a menos de 300 metros de distancia a la costa, la prohibición se amplía a fondos inferiores a 50 metros. Queda prohibido el uso de redes de cerco a una profundidad inferior al 70 por ciento de la altura de caída de la red.",
             "",
             "La potencia máxima propulsora de los buques de cerco no será superior a 450 caballos de vapor, y su eslora será de mínimo 9 metros.",
@@ -529,7 +529,10 @@
         "methodsAvailable": [
             "",
             "<h3>Artes autorizadas</h3>",
+<<<<<<< HEAD
             "",
+=======
+>>>>>>> ed499a06e67964daa4996166b0e7b716573e3b6b
             "Se permitirá la pesca en el Caladero Canario en las siguientes modalidades:",
             "",
             "Artes menores: aparejos de anzuelo (línea de mano, línea o amaño para pesca del alto, caña, puyón, palangre de fondo, curricán o currica), artes de trampa (nasas y tambor para morenas), artes de izada (pandorga, gueldera o tarralla), artes de enmalle (trasmallo y cazonal), artes de cerco (sardinal o traíña, chichorro de aire o hamaca y salemera) y vara de peto.",

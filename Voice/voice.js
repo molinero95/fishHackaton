@@ -6,6 +6,10 @@ function voice() {
         responsiveVoice.speak(string, this.language);
     }
 
+    this.stop = function (){
+        responsiveVoice.cancel();
+    }
+
     this.setLanguage = function (lang) {
         switch (lang) {
             case "es-ES": this.language = "Spanish Female"; break;
