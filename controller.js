@@ -26,7 +26,6 @@ function load() {
     repo.getFishingGroundsInfo((err, res) => {
         infos = res;
     });
-
 }
 
 let addListenersOnPolygon = function (polygon, element) {
@@ -46,6 +45,7 @@ function showHideInfo(fGround) {
     showDefault();
     if ($("#layoutInfo").is(":visible") && !region) {
         $("#layoutInfo").hide(700);
+        $("#logo").show();
     }
     else if ($("#layoutInfo").is(":visible") && region) {    //modificar los datos de layoutInfo
         $("#layoutInfo").hide(500);
@@ -53,12 +53,13 @@ function showHideInfo(fGround) {
         setTimeout(function () {
             $("#layoutInfo > h2").text(fGround.name);
             getActive();
+            $("#logo").hide();
         }, 500);
-
     }
     else if (!layoutInfo.is(":visible") && region) {
         $("#layoutInfo > h2").text(fGround.name);
         $("#layoutInfo").show(700);
+        $("#logo").hide();
     }
 
     currentGround = fGround;

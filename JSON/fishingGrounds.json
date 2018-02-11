@@ -132,7 +132,7 @@
 
 {
     "id" : 6,
-    "name": "France",
+    "name": "Francia",
     "coords" : [
         {"lat":"46.80","lng":"-09.66"},
         {"lat":"45.70","lng":"-08.56"},
@@ -180,7 +180,7 @@
 
 {
     "id" : 7,
-    "name": "Morocco",
+    "name": "Marruecos norte",
     "coords" : [
         {"lat":"35.68","lng":"-05.27"},
         {"lat":"35.42","lng":"-05.02"},
@@ -221,7 +221,7 @@
 
 {
     "id" : 8,
-    "name": "Ireland",
+    "name": "Irlanda",
     "coords" : [
         {"lat":"48.05","lng":"-10.61"},
         {"lat":"48.84","lng":"-13.43"},
@@ -252,7 +252,7 @@
 
 {
     "id" : 9,
-    "name": "Morocco",
+    "name": "Marruecos Noroeste",
     "coords" : [
         {"lat":"35.92","lng":"-05.39"},
         {"lat":"36.00","lng":"-05.37"},
@@ -407,7 +407,7 @@
 },
 {
     "id": 11,
-    "name": "England",
+    "name": "Reino Unido",
     "coords": [
         {"lat":"46.80","lng":"-09.66"},
         {"lat":"47.37","lng":"-09.82"},
@@ -452,7 +452,7 @@
 },
 {
     "id": 12,
-    "name": "Azores",
+    "name": "Madeira",
     "coords": [
         {"lat":"31.17","lng":"-20.70"},
         {"lat":"30.88","lng":"-18.21"},
@@ -477,7 +477,7 @@
         {"lat":"32.93","lng":"-21.24"},
         {"lat":"32.09","lng":"-21.11"}
         
-        ]
+    ]
 }
 ]
 
