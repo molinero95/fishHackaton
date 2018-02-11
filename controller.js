@@ -10,8 +10,9 @@ $(() => {
 });
 
 let fishingGrounds = null;
-let infos = null;
 let currentGround = null;
+let infos = null;
+
 
 function load() {
     let repo = new jsonRepository();
@@ -23,20 +24,20 @@ function load() {
     repo.getFishingGroundsInfo((err, res) => {
         infos = res;
     });
+
 }
 
 let addListenersOnPolygon = function (polygon, element) {
     google.maps.event.addListener(polygon, 'click', function (event) {
         region = true;
-        setMarker(event.latLng.lat(), event.latLng.lng(), element.name);
+        setMarker(event.latLng, element.name);
         showHideInfo(element);
     });
 }
 
 function showHideInfo(fGround) {
     let layoutInfo = $("#layoutInfo");
-    let msg = "<h1>Bienvenidos</h1> <h2>Fishing Geo-Law</h2>"
-    $("#infoContainer").html(msg);
+    currentGround = fGround;
 
     if (layoutInfo.is(":visible") && !region) {
         layoutInfo.hide(1000);
@@ -213,17 +214,11 @@ function showDefault() {
 
     //Titulo de las artes de pesca por caladero
     let aux = getInfoById(currentGround.idInfo);
-
-    //Contenido
-    let correctData = parseSpeechTest(aux.speech);
-    $("#info").html(correctData.ret);
-
-    //Posibles links
-    correctData.links.forEach((elem) => {
-        let link = $("<a>").attr("href", elem).html(elem);
-        $("#info").append(link); +
-            $("#info").append("</br>");
-    });
+    if (aux != null) {
+        //Contenido
+        let correctData = parseSpeechTest(aux.speech);
+        $("#info").html(correctData.ret);
+    };
 };
 
 
