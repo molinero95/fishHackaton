@@ -121,7 +121,6 @@ function showMethodsAvailable() {
     let aux = getInfoById(currentGround.idInfo);
 
     //Contenido
-    console.log(aux);
     let correctData = parse(aux.methodsAvailable);
     $("#info").html(correctData.ret);
     
@@ -182,7 +181,6 @@ function showForbidden() {
 
     //Contenido
     let correctData = parse(aux.restrictedSpecies);
-    console.log(correctData);
     $("#info").html(correctData.ret);
 
     //Posibles links
