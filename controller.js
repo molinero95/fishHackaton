@@ -40,7 +40,7 @@ function showHideInfo(fGround) {
     else if ($("#layoutInfo").is(":visible") && region) {    //modficar los datos de layoutInfo
         $("#layoutInfo").hide(750);
         $("#layoutInfo").show(750);
-        setTimeout(function() {
+        setTimeout(function () {
             $("#layoutInfo > h2").text(fGround.name);
             getActive();
         }, 750);
@@ -76,35 +76,35 @@ function getInfoById(infoId) {
     return info;
 }
 
-function parse (array) {
+function parseHTML(array) {
     let ret = "";
     let links = [];
-    array.forEach((elem)=>{
+    array.forEach((elem) => {
         elem += "</br>";
-        if(elem.indexOf("http") > -1){
+        if (elem.indexOf("http") > -1) {
             links.push(elem);
         }
-        else{
+        else {
             ret += elem;
         }
     });
-    return {ret: ret, links: links};
+    return { ret: ret, links: links };
 };
 
-function prepareSpeech(stringArray){
+function parseSpeech(stringArray) {
     let ret = "";
-    stringArray.forEach((elem)=>{
-        ret +=elem;
+    stringArray.forEach((elem) => {
+        ret += elem;
     });
     return ret;
 };
 
-function speech (){
+function speech() {
     let aux = getInfoById(currentGround.idInfo);
-    responsiveVoice.speak(prepareSpeech(aux.speech),"Spanish Female");
+    responsiveVoice.speak(parseSpeech(aux.speech), "Spanish Female");
 };
 
-function stopSpeech(){
+function stopSpeech() {
     responsiveVoice.cancel();
 }
 
@@ -121,14 +121,14 @@ function showMethodsAvailable() {
     let aux = getInfoById(currentGround.idInfo);
 
     //Contenido
-    let correctData = parse(aux.methodsAvailable);
+    let correctData = parseHTML(aux.methodsAvailable);
     $("#info").html(correctData.ret);
-    
+
     //Posibles links
-    correctData.links.forEach((elem)=>{
+    correctData.links.forEach((elem) => {
         let link = $("<a>").attr("href", elem).html(elem);
-        $("#info").append(link);+ 
-        $("#info").append("</br>");
+        $("#info").append(link); +
+            $("#info").append("</br>");
     });
 };
 
@@ -140,11 +140,6 @@ function showMeasure() {
     let container = $("#infoContainer");
 
     let aux = getInfoById(currentGround.idInfo);
-
-    //Sonido
-    let sound = '<button type="button" class="btn btn-primary" id="sound" onclick="speech()">Reproducir</button>';
-    container.prepend(sound);
-
 
     //Contenido
     mytable = $('<table></table>').addClass("table");
@@ -170,7 +165,14 @@ function showMeasure() {
 function showMore() {
     $(".activ").removeClass("activ");
     $("#moreBtn").addClass("activ");  
-        clearData();
+    clearData();
+
+    let container = $("#infoContainer");
+
+    let aux = getInfoById(currentGround.idInfo);
+
+    $("#info").html(aux.more);
+
 };
 
 
@@ -185,14 +187,14 @@ function showDefault() {
     let aux = getInfoById(currentGround.idInfo);
 
     //Contenido
-    let correctData = parse(aux);
+    let correctData = parseHTML(aux.speech);
     $("#info").html(correctData.ret);
-    
+
     //Posibles links
-    correctData.links.forEach((elem)=>{
+    correctData.links.forEach((elem) => {
         let link = $("<a>").attr("href", elem).html(elem);
-        $("#info").append(link);+ 
-        $("#info").append("</br>");
+        $("#info").append(link); +
+            $("#info").append("</br>");
     });
 };
 
@@ -200,7 +202,7 @@ function showDefault() {
 function showForbidden() {
     clearData();
     $(".activ").removeClass("activ");
-    $("#forbiddenBtn").addClass("activ");    
+    $("#forbiddenBtn").addClass("activ");
 
     //Vacia el contenedor y crea el parrafo
     let container = $("#infoContainer");
@@ -209,25 +211,25 @@ function showForbidden() {
     let aux = getInfoById(currentGround.idInfo);
 
     //Contenido
-    let correctData = parse(aux.restrictedSpecies);
+    let correctData = parseHTML(aux.restrictedSpecies);
     $("#info").html(correctData.ret);
 
     //Posibles links
-    correctData.links.forEach((elem)=>{
+    correctData.links.forEach((elem) => {
         let link = $("<a>").attr("href", elem).html(elem);
-        $("#info").append(link);+ 
-        $("#info").append("</br>");
+        $("#info").append(link); +
+            $("#info").append("</br>");
     });
 };
 
-function getActive(){
+function getActive() {
     let activ = $(".activ");
-    switch(activ.prop("id")){
-        case "artBtn":{
+    switch (activ.prop("id")) {
+        case "artBtn": {
             showMethodsAvailable();
             break;
         }
-        case "measureBtn":{
+        case "measureBtn": {
             showMeasure();
             break;
         }
@@ -242,9 +244,8 @@ function getActive(){
     }
 }
 
-function clearData(){
+function clearData() {
     $("#info").text("");
-    $("#sound").remove();
     $(".table").remove();
     stopSpeech();
 }
