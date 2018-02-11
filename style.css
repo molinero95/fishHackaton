@@ -1,6 +1,7 @@
 body, html{
     height: 100%;
     width: 100%;
+    
 }
 #map {
     height: 94%;
@@ -60,7 +61,10 @@ hr{
 }
 
 #infoContainer {
-    text-align: center;
+    text-align: left;
+    width: auto;
+    overflow-y: scroll;
+    height: 24rem;
 }
 
 .border{
