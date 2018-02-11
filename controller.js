@@ -136,6 +136,35 @@ function showMeasure() {
     $(".activ").removeClass("activ");
     $("#measureBtn").addClass("activ");
     clearData();
+
+    let container = $("#infoContainer");
+
+    let aux = getInfoById(currentGround.idInfo);
+
+    //Sonido
+    let sound = '<button type="button" class="btn btn-primary" id="sound" onclick="speech()">Reproducir</button>';
+    container.prepend(sound);
+
+
+    //Contenido
+    mytable = $('<table></table>').addClass("table");
+    var rows = new Number(aux.minimumSizes.lenght);
+    var cols = new Number(3);
+    var tr = [];
+    let row = $('<tr></tr>').appendTo(mytable);
+    $('<th>').text("Nombre Comun").appendTo(row);
+    $('<th>').text("Nombre Latin").appendTo(row);
+    $('<th>').text("Tamaño (cm)").appendTo(row);
+    mytable.appendTo("#box");
+
+    for(let fish of aux.minimumSizes){
+        let row = $('<tr></tr>').appendTo(mytable);
+        $('<td></td>').text(fish.comercialName).appendTo(row); 
+        $('<td></td>').text(fish.latinName).appendTo(row); 
+        $('<td></td>').text(fish.size).appendTo(row); 
+        mytable.appendTo("#box");
+    }
+    $("#infoContainer").append(mytable);
 };
 
 function showMore() {
@@ -215,5 +244,6 @@ function getActive() {
 
 function clearData() {
     $("#info").text("");
+    $(".table").remove();
     stopSpeech();
 }
