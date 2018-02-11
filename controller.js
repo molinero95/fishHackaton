@@ -55,6 +55,7 @@ function showHideInfo(fGround) {
     }
     else if (!layoutInfo.is(":visible") && region) {
         $("#layoutInfo > h2").text(fGround.name);
+        showDefault();
         $("#layoutInfo").show(700);
     }
 
@@ -124,16 +125,16 @@ function speech() {
     if (!responsiveVoice.isPlaying()) {
         let aux = getInfoById(currentGround.idInfo);
         let voice = "Spanish Female";
-        if(lang === "ES"){
+        if (lang === "ES") {
             voice = "Spanish Female";
         }
-        else if (lang === "PT"){
+        else if (lang === "PT") {
             voice = "Portuguese Female";
         }
-        else{
+        else {
             voice = "UK English Female";
         }
-        responsiveVoice.speak(parseSpeech(aux.speech),voice);
+        responsiveVoice.speak(parseSpeech(aux.speech), voice);
     }
     else {
         stopSpeech();
@@ -216,8 +217,9 @@ function showMore() {
 
 
 function showDefault() {
-    $("hr").show();
+
     clearData();
+    $("hr").show();
     $(".activ").removeClass("activ");
 
     //Vacia el contenedor y crea el parrafo
@@ -227,6 +229,7 @@ function showDefault() {
     let aux = getInfoById(currentGround.idInfo);
     if (aux != null) {
         //Contenido
+        lang = aux.lang;
         let correctData = parseSpeechTest(aux.speech);
         $("#info").html(correctData.ret);
     };
@@ -285,14 +288,14 @@ function clearData() {
     stopSpeech();
 }
 
-function setLangEN(){
+function setLangEN() {
     lang = "EN";
 };
 
-function setLangES(){
+function setLangES() {
     lang = "ES";
 };
 
-function setLangPT(){
+function setLangPT() {
     lang = "PT";
 };

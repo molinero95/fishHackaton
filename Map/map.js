@@ -52,7 +52,6 @@ function generatePolygons(data, map) {
         let polygon = generatePolygon(coords, element.color);
         polygon.setMap(map);
         addListenersOnPolygon(polygon, element);
-
     });
 }
 
