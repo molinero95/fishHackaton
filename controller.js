@@ -82,11 +82,11 @@ function showMethodsAvailable() {
     //Titulo de las artes de pesca por caladero
     let infoGround = getInfoById(currentGround.idInfo);
     let res = $("<h3>").text(infoGround.methodsAvailable[0]);
-    $("#infoContainer").append(res);
+    $("#infoContainer").prepend(res);
     
     //Contenido
     
-    $("#info").text();
+    $("#info").text(infoGround.methodsAvailable.slice(1,infoGround.methodsAvailable.length));
 
 };
 
