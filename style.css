@@ -100,3 +100,16 @@ h3{
     font-family: Georgia, 'Times New Roman', serif;
     color: black;
 }
+
+#languages{
+    float: right;
+    z-index: 2;
+    position: relative;
+}
+
+#languages img {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+
+}
