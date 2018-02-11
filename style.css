@@ -19,7 +19,7 @@ body, html{
 #layoutInfo {
     background: white;
     width: 30%;
-    height: 100%;
+    height: 93%;
     border-left: 3px solid black; 
     border-bottom: 3px solid black;
     border-top: 3px solid black;   
@@ -128,6 +128,20 @@ h3{
     cursor: pointer;
 
 }
+
+#topBar{
+    height:7%;
+
+}
+
+#logo{
+    position:absolute;
+    height:100px;
+    top:9%;
+    right:15px;
+    z-index:1000;
+}
+
 /* 
 #logo{
     background-image: "\Icons\Logo.png";

@@ -16,75 +16,80 @@
 </header>
 
 <body>
-    <!--Menu nav?-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Fishing Geo-Law</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
-                    aria-selected="true">Home</a>
-                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
-                    aria-selected="false">Contact</a>
+    <div>
+        <!--Menu nav?-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="topBar">
+            <a class="navbar-brand" href="#">Fishing Geo-Law</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
+                        aria-selected="true">Home</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
+                        aria-selected="false">Contact</a>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- <div id="logoContainer">
+            <div id="languages" style="position:relative; float:right">
+                <img src="Icons/spain.png" onclick="setLangES()">
+                <img src="Icons/portugal.png" onclick="setLangPT()">
+                <img src="Icons/Britain-512.png" onclick="setLangEN()">
+            </div>
+        </nav>
+        <!-- <div id="logoContainer">
         <img id="logo" src="\Icons\Logo.png"></img>
     </div> -->
-    <div id="mapLayout">
-        <div id="map">
-            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLcHPb0jtpNFs83fZobeJ0HZUCFc-0w_s&callback=load"></script>
-        </div>
-        <div id="layoutInfo">
-            <h2 id="titulo"></h2><span>
-            <div id="iconos" class="container">
-                <span id="artBtn">
-                    <img id="fishingArt" class="border" src="Icons/fishingArt.png">
-                    <p>Artes de pesca</p>
-                </span>
-                <span id="measureBtn">
-                    <img id="measure" class="border" src="Icons/measure.png">
-                    <p>Tamaños minimos</p>
-                </span>
-                <span id="forbiddenBtn">
-                    <img id="forbiddenFish" src="Icons/forbiddenFish.jpg">
-                    <p>Especies restringidas</p>
-                </span>
-                <span id="moreBtn">
-                    <img id="more" src="Icons/more.jpg">
-                    <p>Mas</p>
-                </span>
-            </div></span>
-            <div class="container">
-                <button type="button" class="btn btn-primary" id="sound" onclick="speech()">Reproducir / Parar</button>
-                <hr>
+        <div id="mapLayout">
+            <img src="Icons\Logo.png" id="logo"></img>
+            <div id="map">
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLcHPb0jtpNFs83fZobeJ0HZUCFc-0w_s&callback=load"></script>
             </div>
-            <div id="infoContainer" class="container ">
-                <p id="info"></p>
+            <div id="layoutInfo">
+                <h2 id="titulo"></h2>
+                <span>
+                    <div id="iconos" class="container">
+                        <span id="artBtn">
+                            <img id="fishingArt" class="border" src="Icons/fishingArt.png">
+                            <p>Artes de pesca</p>
+                        </span>
+                        <span id="measureBtn">
+                            <img id="measure" class="border" src="Icons/measure.png">
+                            <p>Tamaños minimos</p>
+                        </span>
+                        <span id="forbiddenBtn">
+                            <img id="forbiddenFish" src="Icons/forbiddenFish.jpg">
+                            <p>Especies restringidas</p>
+                        </span>
+                        <span id="moreBtn">
+                            <img id="more" src="Icons/more.jpg">
+                            <p>Mas</p>
+                        </span>
+                    </div>
+                </span>
+                <div class="container">
+                    <button type="button" class="btn btn-primary" id="sound" onclick="speech()">Reproducir / Parar</button>
+                    <hr>
+                </div>
+                <div id="infoContainer" class="container ">
+                    <p id="info"></p>
+                </div>
             </div>
         </div>
-        <div id="languages">
-            <img src="Icons/spain.png" onclick="setLangES()">
-            <img src="Icons/portugal.png" onclick="setLangPT()">
-            <img src="Icons/Britain-512.png" onclick="setLangEN()">
+        <div id="contactLayout" class="container">
+            <p>
+                <b>Realizado por: </b>
+            </p>
+            <ul>
+                <li>Andrei Ionut Vaduva</li>
+                <li>Jaime Molinero Lacave</li>
+                <li>Sergio Jiménez Romero</li>
+                <li>Patrick Valdivia Terrazas</li>
+                <li>Adela Villasante Fernández</li>
+                </ol>
+            </ul>
         </div>
-    </div>
-    <div id="contactLayout" class="container">
-        <p>
-            <b>Realizado por: </b>
-        </p>
-        <ul>
-            <li>Andrei Ionut Vaduva</li>
-            <li>Jaime Molinero Lacave</li>
-            <li>Sergio Jiménez Romero</li>
-            <li>Patrick Valdivia Terrazas</li>
-            <li>Adela Villasante Fernández</li>
-            </ol>
-        </ul>
     </div>
 </body>
 
