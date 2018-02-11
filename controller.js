@@ -146,7 +146,7 @@ function showMethodsAvailable() {
     $(".activ").removeClass("activ");
     $("#artBtn").addClass("activ");
     clearData();
-
+    $("#fishingArt").css("opacity","0.5");
     //Vacia el contenedor y crea el parrafo
     let container = $("#infoContainer");
 
@@ -171,6 +171,7 @@ function showMeasure() {
     $("#measureBtn").addClass("activ");
     clearData();
 
+    $("#measure").css("opacity","0.5");
     let container = $("#infoContainer");
 
     let aux = getInfoById(currentGround.idInfo);
@@ -201,7 +202,7 @@ function showMore() {
     $(".activ").removeClass("activ");
     $("#moreBtn").addClass("activ");
     clearData();
-
+    $("#more").css("opacity","0.5");
     let container = $("#infoContainer");
 
     let aux = getInfoById(currentGround.idInfo);
@@ -240,6 +241,7 @@ function showForbidden() {
     clearData();
     $(".activ").removeClass("activ");
     $("#forbiddenBtn").addClass("activ");
+    $("#forbiddenFish").css("opacity","0.5");
 
     //Vacia el contenedor y crea el parrafo
     let container = $("#infoContainer");
@@ -285,6 +287,10 @@ function clearData() {
     $("#info").text("");
     $(".table").remove();
     stopSpeech();
+    $("#measure").css("opacity","1");
+    $("#fishingArt").css("opacity","1");
+    $("#forbiddenFish").css("opacity","1");
+    $("#more").css("opacity","1");
 }
 
 function setLangEN(){
