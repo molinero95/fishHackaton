@@ -1,9 +1,13 @@
 "use strict";
 
 let region = false;
-function loadMap(data){
-    var madrid = {lat: 40.416775, lng: -3.703790};
-    var map = new google.maps.Map(document.getElementById('map'), {
+
+var marker = null;
+var map = null;
+
+function loadMap(data) {
+    var madrid = { lat: 40.416775, lng: -3.703790 };
+    map = new google.maps.Map(document.getElementById('map'), {
         zoom: 4,
         center: madrid,
         disableDefaultUI: true,
@@ -11,9 +15,9 @@ function loadMap(data){
         mapTypeControl: true,
         scaleControl: true,
         disableDoubleClickZoom: true
-      
+
     });
-    google.maps.event.addListener(map, "click", function(event) {
+    google.maps.event.addListener(map, "click", function (event) {
         //limpia la ventana de info
         region = false;
         showHideInfo();
@@ -22,7 +26,7 @@ function loadMap(data){
 }
 
 
-function generatePolygon(path, color){
+function generatePolygon(path, color) {
     console.log(color);
     return new google.maps.Polygon({
         path: path,
@@ -30,22 +34,33 @@ function generatePolygon(path, color){
         strokeColor: color,
         strokeOpacity: 1.0,
         strokeWeight: 2,
-        
+
     });
 }
 
 
-function generatePolygons(data, map){
+function generatePolygons(data, map) {
     data.forEach(element => {
         let coordsStr = element.coords;
         let coords = [];
         coordsStr.forEach(e => {
-            coords.push({lat: Number(e.lat), lng: Number(e.lng)});
+            coords.push({ lat: Number(e.lat), lng: Number(e.lng) });
         });
         let polygon = generatePolygon(coords, element.color);
         polygon.setMap(map);
-        addListenersOnPolygon(polygon,element);
-        
+        addListenersOnPolygon(polygon, element);
+
+    });
+}
+
+function setMarker(lat, lng, name) {
+    if (marker != null) {
+        marker.setMap(null);
+    }
+    marker = new google.maps.Marker({
+        position: new google.maps.LatLng(lat, lng),
+        map: map,
+        title: name
     });
 }
 

@@ -12,6 +12,7 @@ $(() => {
 let fishingGrounds = null;
 let infos = null;
 let currentGround = null;
+let lang = "ES";
 
 function load() {
     let repo = new jsonRepository();
@@ -28,11 +29,13 @@ function load() {
 let addListenersOnPolygon = function (polygon, element) {
     google.maps.event.addListener(polygon, 'click', function (event) {
         region = true;
+        setMarker(event.latLng.lat(), event.latLng.lng(), element.name);
         showHideInfo(element);
     });
 }
 
 function showHideInfo(fGround) {
+    let layoutInfo = $("#layoutInfo");
 
     if ($("#layoutInfo").is(":visible") && !region) {
         $("#layoutInfo").hide(700);
@@ -42,11 +45,12 @@ function showHideInfo(fGround) {
         $("#layoutInfo").show(500);
         setTimeout(function () {
             $("#layoutInfo > h2").text(fGround.name);
+            showDefault();
             getActive();
         }, 500);
 
     }
-    else if (!$("#layoutInfo").is(":visible") && region) {
+    else if (!layoutInfo.is(":visible") && region) {
         $("#layoutInfo > h2").text(fGround.name);
         $("#layoutInfo").show(700);
     }
@@ -91,6 +95,20 @@ function parseHTML(array) {
     return { ret: ret, links: links };
 };
 
+function parseSpeechTest(array) {
+    let ret = "";
+    let links = [];
+
+    ret = "<ul>";
+    array.forEach((elem) => {
+        ret += "<li>";
+        ret += elem;
+        ret += "</li>";
+    });
+    ret += "</ul>";
+    return { ret: ret, links: links };
+};
+
 function parseSpeech(stringArray) {
     let ret = "";
     stringArray.forEach((elem) => {
@@ -100,11 +118,21 @@ function parseSpeech(stringArray) {
 };
 
 function speech() {
-    if(!responsiveVoice.isPlaying()){
+    if (!responsiveVoice.isPlaying()) {
         let aux = getInfoById(currentGround.idInfo);
-        responsiveVoice.speak(parseSpeech(aux.speech), "Spanish Female");
+        let voice = "Spanish Female";
+        if(lang === "ES"){
+            voice = "Spanish Female";
+        }
+        else if (lang === "PT"){
+            voice = "Portuguese Female";
+        }
+        else{
+            voice = "UK English Female";
+        }
+        responsiveVoice.speak(parseSpeech(aux.speech),voice);
     }
-    else{
+    else {
         stopSpeech();
     }
 };
@@ -159,11 +187,11 @@ function showMeasure() {
     $('<th>').text("Tamaño (cm)").appendTo(row);
     mytable.appendTo("#box");
 
-    for(let fish of aux.minimumSizes){
+    for (let fish of aux.minimumSizes) {
         let row = $('<tr></tr>').appendTo(mytable);
-        $('<td></td>').text(fish.comercialName).appendTo(row); 
-        $('<td></td>').text(fish.latinName).css("font-style","italic").appendTo(row); 
-        $('<td></td>').text(fish.size).appendTo(row); 
+        $('<td></td>').text(fish.comercialName).appendTo(row);
+        $('<td></td>').text(fish.latinName).css("font-style", "italic").appendTo(row);
+        $('<td></td>').text(fish.size).appendTo(row);
         mytable.appendTo("#box");
     }
     $("#infoContainer").append(mytable);
@@ -172,7 +200,7 @@ function showMeasure() {
 function showMore() {
     $("hr").show();
     $(".activ").removeClass("activ");
-    $("#moreBtn").addClass("activ");  
+    $("#moreBtn").addClass("activ");
     clearData();
 
     let container = $("#infoContainer");
@@ -196,7 +224,7 @@ function showDefault() {
     let aux = getInfoById(currentGround.idInfo);
 
     //Contenido
-    let correctData = parseHTML(aux.speech);
+    let correctData = parseSpeechTest(aux.speech);
     $("#info").html(correctData.ret);
 
     //Posibles links
@@ -259,3 +287,15 @@ function clearData() {
     $(".table").remove();
     stopSpeech();
 }
+
+function setLangEN(){
+    lang = "EN";
+};
+
+function setLangES(){
+    lang = "ES";
+};
+
+function setLangPT(){
+    lang = "PT";
+};
