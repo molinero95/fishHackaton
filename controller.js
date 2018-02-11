@@ -34,13 +34,16 @@ let addListenersOnPolygon = function (polygon, element) {
 }
 
 function showHideInfo(fGround) {
+    let layoutInfo = $("#layoutInfo");
+    let msg = "<h1>Bienvenidos</h1> <h2>Fishing Geo-Law</h2>"
+    $("#infoContainer").html(msg);
 
-    if ($("#layoutInfo").is(":visible") && !region) {
-        $("#layoutInfo").hide(1000);
+    if (layoutInfo.is(":visible") && !region) {
+        layoutInfo.hide(1000);
     }
-    else if ($("#layoutInfo").is(":visible") && region) {    //modficar los datos de layoutInfo
-        $("#layoutInfo").hide(750);
-        $("#layoutInfo").show(750);
+    else if (layoutInfo.is(":visible") && region) {    //modficar los datos de layoutInfo
+        layoutInfo.hide(750);
+        layoutInfo.show(750);
         setTimeout(function () {
             $("#layoutInfo > h2").text(fGround.name);
             showDefault();
@@ -48,9 +51,9 @@ function showHideInfo(fGround) {
         }, 750);
 
     }
-    else if (!$("#layoutInfo").is(":visible") && region) {
+    else if (!layoutInfo.is(":visible") && region) {
         $("#layoutInfo > h2").text(fGround.name);
-        $("#layoutInfo").show(1000);
+        layoutInfo.show(1000);
     }
 
     currentGround = fGround;
