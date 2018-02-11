@@ -124,7 +124,6 @@ function showMethodsAvailable() {
     container.prepend(sound);
 
     //Contenido
-    console.log(aux);
     let correctData = parse(aux.methodsAvailable);
     $("#info").html(correctData.ret);
     
@@ -140,8 +139,6 @@ function showMeasure() {
     $(".activ").removeClass("activ");
     $("#measureBtn").addClass("activ");
     clearData();
-
-    
 
 };
 
@@ -169,7 +166,6 @@ function showForbidden() {
 
     //Contenido
     let correctData = parse(aux.restrictedSpecies);
-    console.log(correctData);
     $("#info").html(correctData.ret);
 
     //Posibles links
