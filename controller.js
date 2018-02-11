@@ -39,7 +39,11 @@ function showHideInfo(fGround) {
         $("#layoutInfo").hide(1000);
     }
     else if ($("#layoutInfo").is(":visible") && region) {    //modficar los datos de layoutInfo
-        $("#layoutInfo > h2").text(fGround.name);
+        $("#layoutInfo").hide(750);
+        $("#layoutInfo").show(750);
+        setTimeout(function() {
+            $("#layoutInfo > h2").text(fGround.name);
+        }, 750);
 
     }
     else if (!$("#layoutInfo").is(":visible") && region) {
