@@ -42,6 +42,7 @@ function showHideInfo(fGround) {
         $("#layoutInfo").show(750);
         setTimeout(function () {
             $("#layoutInfo > h2").text(fGround.name);
+            showDefault();
             getActive();
         }, 750);
 
@@ -88,6 +89,20 @@ function parseHTML(array) {
             ret += elem;
         }
     });
+    return { ret: ret, links: links };
+};
+
+function parseSpeechTest(array) {
+    let ret = "";
+    let links = [];
+
+    ret = "<ul>";
+    array.forEach((elem) => {
+        ret += "<li>";
+        ret += elem;
+        ret += "</li>";
+    });
+    ret += "</ul>";
     return { ret: ret, links: links };
 };
 
@@ -152,11 +167,11 @@ function showMeasure() {
     $('<th>').text("Tamaño (cm)").appendTo(row);
     mytable.appendTo("#box");
 
-    for(let fish of aux.minimumSizes){
+    for (let fish of aux.minimumSizes) {
         let row = $('<tr></tr>').appendTo(mytable);
-        $('<td></td>').text(fish.comercialName).appendTo(row); 
-        $('<td></td>').text(fish.latinName).appendTo(row); 
-        $('<td></td>').text(fish.size).appendTo(row); 
+        $('<td></td>').text(fish.comercialName).appendTo(row);
+        $('<td></td>').text(fish.latinName).appendTo(row);
+        $('<td></td>').text(fish.size).appendTo(row);
         mytable.appendTo("#box");
     }
     $("#infoContainer").append(mytable);
@@ -164,7 +179,7 @@ function showMeasure() {
 
 function showMore() {
     $(".activ").removeClass("activ");
-    $("#moreBtn").addClass("activ");  
+    $("#moreBtn").addClass("activ");
     clearData();
 
     let container = $("#infoContainer");
@@ -187,7 +202,7 @@ function showDefault() {
     let aux = getInfoById(currentGround.idInfo);
 
     //Contenido
-    let correctData = parseHTML(aux.speech);
+    let correctData = parseSpeechTest(aux.speech);
     $("#info").html(correctData.ret);
 
     //Posibles links
