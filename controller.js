@@ -13,6 +13,7 @@ let fishingGrounds = null;
 let currentGround = null;
 let infos = null;
 
+let lang = "ES";
 
 function load() {
     let repo = new jsonRepository();
@@ -39,22 +40,22 @@ function showHideInfo(fGround) {
     let layoutInfo = $("#layoutInfo");
     currentGround = fGround;
 
-    if (layoutInfo.is(":visible") && !region) {
-        layoutInfo.hide(1000);
+    if ($("#layoutInfo").is(":visible") && !region) {
+        $("#layoutInfo").hide(700);
     }
-    else if (layoutInfo.is(":visible") && region) {    //modficar los datos de layoutInfo
-        layoutInfo.hide(750);
-        layoutInfo.show(750);
+    else if ($("#layoutInfo").is(":visible") && region) {    //modficar los datos de layoutInfo
+        $("#layoutInfo").hide(500);
+        $("#layoutInfo").show(500);
         setTimeout(function () {
             $("#layoutInfo > h2").text(fGround.name);
             showDefault();
             getActive();
-        }, 750);
+        }, 500);
 
     }
     else if (!layoutInfo.is(":visible") && region) {
         $("#layoutInfo > h2").text(fGround.name);
-        layoutInfo.show(1000);
+        $("#layoutInfo").show(700);
     }
 
     currentGround = fGround;
@@ -122,7 +123,17 @@ function parseSpeech(stringArray) {
 function speech() {
     if (!responsiveVoice.isPlaying()) {
         let aux = getInfoById(currentGround.idInfo);
-        responsiveVoice.speak(parseSpeech(aux.speech), "Spanish Female");
+        let voice = "Spanish Female";
+        if(lang === "ES"){
+            voice = "Spanish Female";
+        }
+        else if (lang === "PT"){
+            voice = "Portuguese Female";
+        }
+        else{
+            voice = "UK English Female";
+        }
+        responsiveVoice.speak(parseSpeech(aux.speech),voice);
     }
     else {
         stopSpeech();
@@ -273,3 +284,15 @@ function clearData() {
     $(".table").remove();
     stopSpeech();
 }
+
+function setLangEN(){
+    lang = "EN";
+};
+
+function setLangES(){
+    lang = "ES";
+};
+
+function setLangPT(){
+    lang = "PT";
+};
