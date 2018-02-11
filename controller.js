@@ -11,6 +11,7 @@ $(() => {
 
 let fishingGrounds = null;
 let infos = null;
+let currentGround = null;
 
 
 function load() {
@@ -45,6 +46,8 @@ function showHideInfo(fGround) {
         $("#layoutInfo > h2").text(fGround.name);
         $("#layoutInfo").show(1000);
     }
+
+    currentGround = fGround;
     //Si no es visible y tocamos agua no hacemos nada
 }
 
@@ -70,17 +73,25 @@ function getInfoById(infoId) {
 }
 
 //antiguo showInfo
-function showMethodsAvailable(){
-    let res = $("<h3>").text("hola");
+function showMethodsAvailable() {
+    //console.log(infoGround.methodsAvailable);
+    //Titulo de las artes de pesca por caladero
+    let infoGround = getInfoById(currentGround.idInfo);
+    let res = $("<h3>").text(infoGround.methodsAvailable[0]);
     $("#infoContainer").append(res);
-};
-
-function showMeasure(){
-
-};
-
-function showMore(){
     
+    //Contenido
+    
+    $("#info").text();
+
+};
+
+function showMeasure() {
+
+};
+
+function showMore() {
+
 };
 
 function showForbidden() {
