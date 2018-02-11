@@ -76,17 +76,37 @@ function getInfoById(infoId) {
     return info;
 }
 
+function leer (infoGround) {
+    let ret = "";
+    let links = [];
+    infoGround.methodsAvailable.forEach((elem)=>{
+        if(elem.indexOf("http") > -1){
+            links.push(elem);
+        }
+        else{
+            ret += elem;
+        }
+    });
+    return {ret: ret, links: links};
+}
+
 //antiguo showInfo
 function showMethodsAvailable() {
-    //console.log(infoGround.methodsAvailable);
+
     //Titulo de las artes de pesca por caladero
     let infoGround = getInfoById(currentGround.idInfo);
     let res = $("<h3>").text(infoGround.methodsAvailable[0]);
     $("#infoContainer").prepend(res);
     
     //Contenido
-    
-    $("#info").text(infoGround.methodsAvailable.slice(1,infoGround.methodsAvailable.length));
+    let correctData = leer(infoGround);
+    $("#info").text(correctData.ret);
+    //Posibles links
+    correctData.links.forEach((elem)=>{
+        let link = $("<a>").attr("href", elem).text(elem);
+        $("#info").append(link);
+    });
+
 
 };
 
