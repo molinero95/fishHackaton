@@ -115,8 +115,13 @@ function parseSpeech(stringArray) {
 };
 
 function speech() {
-    let aux = getInfoById(currentGround.idInfo);
-    responsiveVoice.speak(parseSpeech(aux.speech), "Spanish Female");
+    if(!responsiveVoice.isPlaying()){
+        let aux = getInfoById(currentGround.idInfo);
+        responsiveVoice.speak(parseSpeech(aux.speech), "Spanish Female");
+    }
+    else{
+        stopSpeech();
+    }
 };
 
 function stopSpeech() {
