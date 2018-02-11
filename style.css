@@ -50,9 +50,20 @@ body, html{
 }
 
 
+
 #iconos span{
     text-align: center;
     cursor: pointer;
+}
+
+
+
+#iconos span p:hover{
+    font-size: 18px;
+}
+
+.activ p {
+    text-decoration: underline;
 }
 
 hr{
