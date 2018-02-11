@@ -189,8 +189,8 @@ function showMeasure() {
     var cols = new Number(3);
     var tr = [];
     let row = $('<tr></tr>').appendTo(mytable);
-    $('<th>').text("Nombre Comun").appendTo(row);
-    $('<th>').text("Nombre Latin").appendTo(row);
+    $('<th>').text("Nombre Común").appendTo(row);
+    $('<th>').text("Nombre Latín").appendTo(row);
     $('<th>').text("Tamaño (cm)").appendTo(row);
     mytable.appendTo("#box");
 
