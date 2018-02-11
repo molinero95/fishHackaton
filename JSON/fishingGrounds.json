@@ -1,7 +1,7 @@
 [
 {
 "id" : 1,
-"name": "Cantabric",
+"name": "Cantábrico",
 "coords" : [
 {   "lat" : "41.84",    "lng":"-08.85" },
 {   "lat" : "41.79",    "lng":"-11.33" },
@@ -48,7 +48,7 @@
 
 {
 "id" : 3,
-"name": "Cadiz",
+"name": "Cádiz",
 "coords" : [
 {   "lat" : "37.15",    "lng":"-7.33" },
 {   "lat" : "36.47",    "lng":"-7.25" },
@@ -68,7 +68,7 @@
 
 {
 "id" : 4,
-"name": "Mediterranean",
+"name": "Mediterráneo",
 "coords" : [
 {   "lat" : "35.77",    "lng":"-5.26" },
 {   "lat" : "35.79",    "lng":"-4.66" },
@@ -106,7 +106,7 @@
 
 {
     "id" : 5,
-    "name": "Canarian",
+    "name": "Canario",
     "coords" : [
         {"lat" :"31.05","lng" :"-20.66"},
         {"lat" :"30.79","lng" :"-18.12"},
