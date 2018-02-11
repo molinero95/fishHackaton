@@ -12,6 +12,7 @@ $(() => {
 let fishingGrounds = null;
 let infos = null;
 let currentGround = null;
+let lang = "ES";
 
 function load() {
     let repo = new jsonRepository();
@@ -34,8 +35,6 @@ let addListenersOnPolygon = function (polygon, element) {
 
 function showHideInfo(fGround) {
     let layoutInfo = $("#layoutInfo");
-    let msg = "<h1>Bienvenidos</h1> <h2>Fishing Geo-Law</h2>"
-    $("#infoContainer").html(msg);
 
     if (layoutInfo.is(":visible") && !region) {
         layoutInfo.hide(1000);
@@ -48,7 +47,6 @@ function showHideInfo(fGround) {
             showDefault();
             getActive();
         }, 750);
-
     }
     else if (!layoutInfo.is(":visible") && region) {
         $("#layoutInfo > h2").text(fGround.name);
@@ -120,7 +118,17 @@ function parseSpeech(stringArray) {
 function speech() {
     if(!responsiveVoice.isPlaying()){
         let aux = getInfoById(currentGround.idInfo);
-        responsiveVoice.speak(parseSpeech(aux.speech), "Spanish Female");
+        let voice = "Spanish Female";
+        if(lang === "ES"){
+            voice = "Spanish Female";
+        }
+        else if (lang === "PT"){
+            voice = "Portuguese Female";
+        }
+        else{
+            voice = "UK English Female";
+        }
+        responsiveVoice.speak(parseSpeech(aux.speech),voice);
     }
     else{
         stopSpeech();
@@ -277,3 +285,15 @@ function clearData() {
     $(".table").remove();
     stopSpeech();
 }
+
+function setLangEN(){
+    lang = "EN";
+};
+
+function setLangES(){
+    lang = "ES";
+};
+
+function setLangPT(){
+    lang = "PT";
+};
