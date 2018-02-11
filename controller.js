@@ -29,6 +29,7 @@ function load() {
 let addListenersOnPolygon = function (polygon, element) {
     google.maps.event.addListener(polygon, 'click', function (event) {
         region = true;
+        setMarker(event.latLng.lat(), event.latLng.lng(), element.name);
         showHideInfo(element);
     });
 }
@@ -116,7 +117,7 @@ function parseSpeech(stringArray) {
 };
 
 function speech() {
-    if(!responsiveVoice.isPlaying()){
+    if (!responsiveVoice.isPlaying()) {
         let aux = getInfoById(currentGround.idInfo);
         let voice = "Spanish Female";
         if(lang === "ES"){
@@ -130,7 +131,7 @@ function speech() {
         }
         responsiveVoice.speak(parseSpeech(aux.speech),voice);
     }
-    else{
+    else {
         stopSpeech();
     }
 };
@@ -187,9 +188,9 @@ function showMeasure() {
 
     for (let fish of aux.minimumSizes) {
         let row = $('<tr></tr>').appendTo(mytable);
-        $('<td></td>').text(fish.comercialName).appendTo(row); 
-        $('<td></td>').text(fish.latinName).css("font-style","italic").appendTo(row); 
-        $('<td></td>').text(fish.size).appendTo(row); 
+        $('<td></td>').text(fish.comercialName).appendTo(row);
+        $('<td></td>').text(fish.latinName).css("font-style", "italic").appendTo(row);
+        $('<td></td>').text(fish.size).appendTo(row);
         mytable.appendTo("#box");
     }
     $("#infoContainer").append(mytable);
