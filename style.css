@@ -49,14 +49,10 @@ body, html{
     margin-bottom: 0;
 }
 
-
-
 #iconos span{
     text-align: center;
     cursor: pointer;
 }
-
-
 
 #iconos span p:hover{
     font-size: 18px;
@@ -83,10 +79,24 @@ hr{
     border-image: 0px;
     background: white;
 }
-/*... centralo como puedas sino borra esto y se pone a la izquierda*/
-.btn-primary{
-   margin-left: 40%;
+.container{
+    text-align: center;
 }
+
 .table{
     text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+#info > h3{
+    font-family: "Times New Roman", Times, serif;
+    color: brown;
+}
+
+#info{
+    font-family: Georgia, 'Times New Roman', serif;
+    color: black;
 }

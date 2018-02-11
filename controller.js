@@ -125,6 +125,7 @@ function stopSpeech() {
 
 //antiguo showInfo
 function showMethodsAvailable() {
+    $("hr").show();
     $(".activ").removeClass("activ");
     $("#artBtn").addClass("activ");
     clearData();
@@ -148,6 +149,7 @@ function showMethodsAvailable() {
 };
 
 function showMeasure() {
+    $("hr").hide();
     $(".activ").removeClass("activ");
     $("#measureBtn").addClass("activ");
     clearData();
@@ -169,15 +171,16 @@ function showMeasure() {
 
     for (let fish of aux.minimumSizes) {
         let row = $('<tr></tr>').appendTo(mytable);
-        $('<td></td>').text(fish.comercialName).appendTo(row);
-        $('<td></td>').text(fish.latinName).appendTo(row);
-        $('<td></td>').text(fish.size).appendTo(row);
+        $('<td></td>').text(fish.comercialName).appendTo(row); 
+        $('<td></td>').text(fish.latinName).css("font-style","italic").appendTo(row); 
+        $('<td></td>').text(fish.size).appendTo(row); 
         mytable.appendTo("#box");
     }
     $("#infoContainer").append(mytable);
 };
 
 function showMore() {
+    $("hr").show();
     $(".activ").removeClass("activ");
     $("#moreBtn").addClass("activ");
     clearData();
@@ -192,6 +195,7 @@ function showMore() {
 
 
 function showDefault() {
+    $("hr").show();
     clearData();
     $(".activ").removeClass("activ");
 
@@ -215,6 +219,7 @@ function showDefault() {
 
 
 function showForbidden() {
+    $("hr").show();
     clearData();
     $(".activ").removeClass("activ");
     $("#forbiddenBtn").addClass("activ");

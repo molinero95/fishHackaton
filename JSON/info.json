@@ -113,13 +113,18 @@
         ],
         "more": "<h3>Diario de a bordo</h3> Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
     },
+
     {
         "id": "2",
         "minimumSizes": [],
         "restrictedSpecies": [],
         "methodsAvailable": [],
+        "speech" : [
+            "Tanto na pesca como na pesca comercial e na pesca recreativa, incluindo a pesca subaquática, é proibido manter a bordo, desembarcar, transportar, armazenar, exibir ou vender espécimes que não tenham o tamanho mínimo ou peso mínimo legalmente estabelecido."
+        ],
         "more": ""
     },
+
     {
         "id": "3",
         "minimumSizes": [
@@ -206,7 +211,6 @@
         ],
         "restrictedSpecies": [
             "<h3>Pesca de voraz o besugo</h3>",
-            "",
             "Los buques que ejerzan este tipo de pesca deberán contar con las licencias y permisos correspondientes.",
             "",
             "En esta zona, únicamente podrá realizarse la pesca de voraz o besugo (Pagellus bogaraveo) mediante el arte denominado voracera. Las dimensiones de las voraceras y los anzuelos están limitadas, y no se podrá superar un máximo de 2400 anzuelos, ni de 30 voraceras por buque.",
