@@ -155,7 +155,7 @@ function showMeasure() {
     for(let fish of aux.minimumSizes){
         let row = $('<tr></tr>').appendTo(mytable);
         $('<td></td>').text(fish.comercialName).appendTo(row); 
-        $('<td></td>').text(fish.latinName).appendTo(row); 
+        $('<td></td>').text(fish.latinName).css("font-style","italic").appendTo(row); 
         $('<td></td>').text(fish.size).appendTo(row); 
         mytable.appendTo("#box");
     }
