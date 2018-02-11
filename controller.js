@@ -76,10 +76,10 @@ function getInfoById(infoId) {
     return info;
 }
 
-function parse (infoGround) {
+function parse (array) {
     let ret = "";
     let links = [];
-    infoGround.methodsAvailable.forEach((elem)=>{
+    array.forEach((elem)=>{
         elem += "</br>";
         if(elem.indexOf("http") > -1){
             links.push(elem);
@@ -124,7 +124,8 @@ function showMethodsAvailable() {
     container.prepend(sound);
 
     //Contenido
-    let correctData = parse(aux);
+    console.log(aux);
+    let correctData = parse(aux.methodsAvailable);
     $("#info").html(correctData.ret);
     
     //Posibles links
@@ -161,13 +162,20 @@ function showForbidden() {
     //Titulo de las artes de pesca por caladero
     let aux = getInfoById(currentGround.idInfo);
     //Sonido
-    let sound = '<button type="button" class="btn btn-primary" id="sound" onclick="speech()">Reproducir</button>';
+    let sound = '<button type="button" class="btn btn-primary " id="sound" onclick="speech()">Reproducir</button>';
     container.prepend(sound);
 
     //Contenido
-    let correctData = parse(aux);
-    console.log(correctData);1
+    let correctData = parse(aux.restrictedSpecies);
+    console.log(correctData);
     $("#info").html(correctData.ret);
+
+    //Posibles links
+    correctData.links.forEach((elem)=>{
+        let link = $("<a>").attr("href", elem).html(elem);
+        $("#info").append(link);+ 
+        $("#info").append("</br>");
+    });
 };
 
 function getActive(){
