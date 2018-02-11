@@ -42,6 +42,7 @@ function showHideInfo(fGround) {
         $("#layoutInfo").show(750);
         setTimeout(function() {
             $("#layoutInfo > h2").text(fGround.name);
+            getActive();
         }, 750);
 
     }
@@ -103,8 +104,16 @@ function speech (){
     responsiveVoice.speak(prepareSpeech(aux.speech),"Spanish Female");
 };
 
+function stopSpeech(){
+    responsiveVoice.cancel();
+}
+
 //antiguo showInfo
 function showMethodsAvailable() {
+    $(".activ").removeClass("activ");
+    $("#artBtn").addClass("activ");
+    clearData();
+
     //Vacia el contenedor y crea el parrafo
     let container = $("#infoContainer");
     container.empty();
@@ -113,7 +122,7 @@ function showMethodsAvailable() {
     //Titulo de las artes de pesca por caladero
     let aux = getInfoById(currentGround.idInfo);
     //Sonido
-    let sound = '<button type="button" class="btn btn-primary" onclick="speech()">Reproducir</button>';
+    let sound = '<button type="button" class="btn btn-primary" id="sound" onclick="speech()">Reproducir</button>';
     container.prepend(sound);
 
     //Contenido
@@ -129,13 +138,48 @@ function showMethodsAvailable() {
 };
 
 function showMeasure() {
+    $(".activ").removeClass("activ");
+    $("#measureBtn").addClass("activ");
+    clearData();
 
 };
 
 function showMore() {
-
+    clearData();
+    $(".activ").removeClass("activ");
+    $("#moreBtn").addClass("activ");
 };
 
 function showForbidden() {
-
+    clearData();
+    $(".activ").removeClass("activ");
+    $("#forbiddenBtn").addClass("activ");
 };
+
+function getActive(){
+    let activ = $(".activ");
+    switch(activ.prop("id")){
+        case "artBtn":{
+            showMethodsAvailable();
+            break;
+        }
+        case "measureBtn":{
+            showMeasure();
+            break;
+        }
+        case "forbiddenBtn": {
+            showForbidden();
+            break;
+        }
+        case "moreBtn": {
+            showMore();
+            break;
+        }
+    }
+}
+
+function clearData(){
+    $("#info").text("");
+    $("#sound").remove();
+    stopSpeech();
+}
