@@ -72,3 +72,7 @@ hr{
     border-image: 0px;
     background: white;
 }
+/*... centralo como puedas sino borra esto y se pone a la izquierda*/
+.btn-primary{
+   margin-left: 40%;
+}

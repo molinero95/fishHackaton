@@ -13,7 +13,6 @@ let fishingGrounds = null;
 let infos = null;
 let currentGround = null;
 
-
 function load() {
     let repo = new jsonRepository();
     repo.getFishingGrounds((err, res) => {
@@ -79,7 +78,6 @@ function getInfoById(infoId) {
 function parse (infoGround) {
     let ret = "";
     let links = [];
-    infoGround.methodsAvailable.splice(0,1);
     infoGround.methodsAvailable.forEach((elem)=>{
         elem += "</br>";
         if(elem.indexOf("http") > -1){
@@ -90,22 +88,43 @@ function parse (infoGround) {
         }
     });
     return {ret: ret, links: links};
-}
+};
+
+function prepareSpeech(stringArray){
+    let ret = "";
+    stringArray.forEach((elem)=>{
+        ret +=elem;
+    });
+    return ret;
+};
+
+function speech (){
+    let aux = getInfoById(currentGround.idInfo);
+    responsiveVoice.speak(prepareSpeech(aux.speech),"Spanish Female");
+};
 
 //antiguo showInfo
 function showMethodsAvailable() {
+    //Vacia el contenedor y crea el parrafo
+    let container = $("#infoContainer");
+    container.empty();
+    container.append($("<p>").attr("id","info"));
 
     //Titulo de las artes de pesca por caladero
-    let infoGround = getInfoById(currentGround.idInfo);
-    let res = $("<h3>").text(infoGround.methodsAvailable[0]);
-    $("#infoContainer").prepend(res);
+    let aux = getInfoById(currentGround.idInfo);
+    //Sonido
+    let sound = '<button type="button" class="btn btn-primary" onclick="speech()">Reproducir</button>';
+    container.prepend(sound);
+
     //Contenido
-    let correctData = parse(infoGround);
+    let correctData = parse(aux);
     $("#info").html(correctData.ret);
+    
     //Posibles links
     correctData.links.forEach((elem)=>{
         let link = $("<a>").attr("href", elem).html(elem);
-        $("#info").append(link);
+        $("#info").append(link);+ 
+        $("#info").append("</br>");
     });
 };
 

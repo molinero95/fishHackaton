@@ -79,8 +79,8 @@
             "https://www.boe.es/boe/dias/2014/08/14/pdfs/BOE-A-2014-8731.pdf"
         ],
         "methodsAvailable": [
-            "Pesca con artes de arrastre de fondo",
             "",
+            "<h3>Pesca con artes de arrastre de fondo</h3>",
             "Los buques que ejerzan este tipo de pesca deberán estar inscritos en el censo de Flota Pesquera Operativa, y poseer la licencia correspondiente. Las dimensiones de los buques están restringidas.",
             "",
             "Se podrá ejercer pesca de arrastre  de fondo, un máximo de 5 días por semana, con un descanso de al menos 48 horas ininterrumpidas. La profundidad mínima autorizada del fondo es de 100 metros.",
@@ -207,19 +207,30 @@
             "Orden AAA/1589/2012, de 17 de julio, por la que se regula la pesquería del voraz (Pagellus bogaraveo) con el arte denominado voracera en el Estrecho de Gibraltar. http://www.boe.es/boe/dias/2012/07/18/pdfs/BOE-A-2012-9652.pdf"
         ],
         "methodsAvailable": [
-            "Artes de arrastre de fondo",
+            "",
+            "<h3>Artes de arrastre de fondo</h3>",
             "Los buques que ejerzan la pesca con artes de arrastre de fondo deberán contar con las correspondientes licencias y permisos.",
+            "",
             "Este tipo de pesca queda prohibida en fondos de menos de 50 metros de profundidad.",
+            "",
             "No se podrá faenar durante más de cinco días por semana, debiéndose suspender la actividad pesquera con artes de arrastre de fondo durante sábados y domingos.",
+            "",
             "REAL DECRETO 632/1993, de 3 de mayo, por el que se regula el ejercicio de la pesca de “arrastre de fondo” en el Golfo de Cádiz.",
+            "",
             "http://www.boe.es/boe/dias/1993/05/18/pdfs/A14863-14865.pdf",
-            "Pesca de arte menor (artes de enmalle, aparejos de anzuelo y trampas)",
+            "<h3>Pesca de arte menor (artes de enmalle, aparejos de anzuelo y trampas)</h3>",
             "Los buques que ejerzan este tipo de pesca deberán contar con las licencias y permisos correspondientes, además de estar inscritos en el censo de Flota Pesquera Operativa.",
+            "",
             "Las embarcaciones a remo o a vela no podrán ejercer actividades pesqueras en aguas exteriores, y las embarcaciones con motor fuera de borda solo podrán hacerlo a una distancia máxima de la costa de dos millas.",
+            "",
             "Las dimensiones de los diferentes útiles de pesca, así como la potencia y la eslora de los buques que la ejercen están restringidos. Está prohibida la tenencia a bordo y la utilización de nasas dirigidas a la captura de peces.",
+            "",
             "No se podrá faenar durante más de cinco días por semana, debiendo existir un descanso semanal de al menos 48 horas ininterrumpidas.",
+            "",
             "Los aparejos y artes deberán estar señalizados adecuadamente.",
+            "",
             "REAL DECRETO 1428/1997, de 15 de septiembre, por el que se regula la pesca con artes menores en el caladero del Golfo de Cádiz.",
+            "",
             "http://www.boe.es/boe/dias/1997/10/01/pdfs/A28585-28587.pdf"
         ],
         "speech": [
