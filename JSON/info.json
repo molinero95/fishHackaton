@@ -111,20 +111,20 @@
             "El periodo hábil para la pesca de langosta con nasas es limitado, así como la profundidad mínima de los fondos en los que se puede capturar este animal.",
             "Existen tallas mínimas para algunas especies, que deberán ser respetadas para su retención y comercialización."
         ],
-        "more": "<h3>Diario de a bordo</h3> Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
+        "more": "<h3>Diario de a bordo</h3> Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc.",
+        "lang": "ES"
     },
-
     {
         "id": "2",
         "minimumSizes": [],
         "restrictedSpecies": [],
         "methodsAvailable": [],
-        "speech" : [
-            "Tanto na pesca como na pesca comercial e na pesca recreativa, incluindo a pesca subaquática, é proibido manter a bordo, desembarcar, transportar, armazenar, exibir ou vender espécimes que não tenham o tamanho mínimo ou peso mínimo legalmente estabelecido."
+        "speech": [
+            "Para determinadas espécies foram estabelecidos tamanhos mínimos, que os espécimes capturados devem apresentar para serem mantidos a bordo e comercializados."
         ],
-        "more": ""
+        "more": "",
+        "lang": "PT"
     },
-
     {
         "id": "3",
         "minimumSizes": [
@@ -252,7 +252,8 @@
             "Existen restricciones que afectan a las dimensiones de los buques en función de las artes de pesca.",
             "Para la pesca del voraz o besugo, es necesario disponer de una licencia vigente para el uso de voraceras. El periodo de pesca de este animal se encuentra restringido, y el esfuerzo pesquero no podrá superar los 140 días al año."
         ],
-        "more": "<h3>Diario de a bordo</h3> Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
+        "more": "<h3>Diario de a bordo</h3> Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc.",
+        "lang": "ES"
     },
     {
         "id": "4",
@@ -448,7 +449,8 @@
             "Existe una zona de pesca restringida de especies demersales.",
             "Existen tallas mínimas para algunas especies, que deberán ser respetadas para su retención y comercialización."
         ],
-        "more": "<h3>Diario de a bordo</h3> Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
+        "more": "<h3>Diario de a bordo</h3> Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc.",
+        "lang": "ES"
     },
     {
         "id": "5",
@@ -555,6 +557,7 @@
             "Solo determinadas especies están autorizadas para ser pescadas con artes de cerco, y su utilización como cebo, vivo, muerto, o como carnada, se encuentra restringida.",
             "Existen tallas mínimas para algunas especies, que deberán ser respetadas para su retención y comercialización."
         ],
-        "more": "<h3>Diario de a bordo</h3> Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
+        "more": "<h3>Diario de a bordo</h3> Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc.",
+        "lang": "ES"
     }
 ]
