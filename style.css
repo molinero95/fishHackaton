@@ -114,3 +114,8 @@ h3{
 
 }
 
+#logo{
+    background-image: "\Icons\Logo.png";
+    width: 80%;
+    z-index: 1000;
+}

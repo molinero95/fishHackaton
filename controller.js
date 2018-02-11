@@ -12,6 +12,7 @@ $(() => {
 let fishingGrounds = null;
 let currentGround = null;
 let infos = null;
+let fGroundChange = false;
 
 let lang = "ES";
 
@@ -31,6 +32,7 @@ function load() {
 let addListenersOnPolygon = function (polygon, element) {
     google.maps.event.addListener(polygon, 'click', function (event) {
         region = true;
+        fGroundChange = true;
         setMarker(event.latLng, element.name);
         showHideInfo(element);
     });
@@ -40,22 +42,22 @@ function showHideInfo(fGround) {
     let layoutInfo = $("#layoutInfo");
     currentGround = fGround;
 
+
+    showDefault();
     if ($("#layoutInfo").is(":visible") && !region) {
         $("#layoutInfo").hide(700);
     }
-    else if ($("#layoutInfo").is(":visible") && region) {    //modficar los datos de layoutInfo
+    else if ($("#layoutInfo").is(":visible") && region) {    //modificar los datos de layoutInfo
         $("#layoutInfo").hide(500);
         $("#layoutInfo").show(500);
         setTimeout(function () {
             $("#layoutInfo > h2").text(fGround.name);
-            showDefault();
             getActive();
         }, 500);
 
     }
     else if (!layoutInfo.is(":visible") && region) {
         $("#layoutInfo > h2").text(fGround.name);
-        showDefault();
         $("#layoutInfo").show(700);
     }
 
@@ -151,7 +153,7 @@ function showMethodsAvailable() {
     $(".activ").removeClass("activ");
     $("#artBtn").addClass("activ");
     clearData();
-    $("#fishingArt").css("opacity","0.5");
+    $("#fishingArt").css("opacity", "0.5");
     //Vacia el contenedor y crea el parrafo
     let container = $("#infoContainer");
 
@@ -176,7 +178,7 @@ function showMeasure() {
     $("#measureBtn").addClass("activ");
     clearData();
 
-    $("#measure").css("opacity","0.5");
+    $("#measure").css("opacity", "0.5");
     let container = $("#infoContainer");
 
     let aux = getInfoById(currentGround.idInfo);
@@ -207,7 +209,7 @@ function showMore() {
     $(".activ").removeClass("activ");
     $("#moreBtn").addClass("activ");
     clearData();
-    $("#more").css("opacity","0.5");
+    $("#more").css("opacity", "0.5");
     let container = $("#infoContainer");
 
     let aux = getInfoById(currentGround.idInfo);
@@ -242,7 +244,7 @@ function showForbidden() {
     clearData();
     $(".activ").removeClass("activ");
     $("#forbiddenBtn").addClass("activ");
-    $("#forbiddenFish").css("opacity","0.5");
+    $("#forbiddenFish").css("opacity", "0.5");
 
     //Vacia el contenedor y crea el parrafo
     let container = $("#infoContainer");
@@ -288,10 +290,10 @@ function clearData() {
     $("#info").text("");
     $(".table").remove();
     stopSpeech();
-    $("#measure").css("opacity","1");
-    $("#fishingArt").css("opacity","1");
-    $("#forbiddenFish").css("opacity","1");
-    $("#more").css("opacity","1");
+    $("#measure").css("opacity", "1");
+    $("#fishingArt").css("opacity", "1");
+    $("#forbiddenFish").css("opacity", "1");
+    $("#more").css("opacity", "1");
 }
 
 function setLangEN() {
