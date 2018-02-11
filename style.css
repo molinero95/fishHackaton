@@ -56,9 +56,6 @@ body, html{
     cursor: pointer;
 }
 
-#iconos span img:hover{
-    filter: grayscale();
-}
 
 
 #iconos span p:hover{
