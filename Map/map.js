@@ -17,11 +17,14 @@ function loadMap(data) {
         disableDoubleClickZoom: true
 
     });
+
     google.maps.event.addListener(map, "click", function (event) {
         //limpia la ventana de info
         region = false;
+        setMarker(event.latLng, "International Waters");
         showHideInfo();
     });
+
     generatePolygons(data, map);
 }
 
@@ -53,12 +56,12 @@ function generatePolygons(data, map) {
     });
 }
 
-function setMarker(lat, lng, name) {
+function setMarker(latlng, name) {
     if (marker != null) {
         marker.setMap(null);
     }
     marker = new google.maps.Marker({
-        position: new google.maps.LatLng(lat, lng),
+        position: latlng,
         map: map,
         title: name
     });

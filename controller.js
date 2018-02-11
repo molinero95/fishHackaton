@@ -10,8 +10,9 @@ $(() => {
 });
 
 let fishingGrounds = null;
-let infos = null;
 let currentGround = null;
+let infos = null;
+
 let lang = "ES";
 
 function load() {
@@ -24,34 +25,37 @@ function load() {
     repo.getFishingGroundsInfo((err, res) => {
         infos = res;
     });
+
 }
 
 let addListenersOnPolygon = function (polygon, element) {
     google.maps.event.addListener(polygon, 'click', function (event) {
         region = true;
-        setMarker(event.latLng.lat(), event.latLng.lng(), element.name);
+        setMarker(event.latLng, element.name);
         showHideInfo(element);
     });
 }
 
 function showHideInfo(fGround) {
     let layoutInfo = $("#layoutInfo");
+    currentGround = fGround;
 
-    if (layoutInfo.is(":visible") && !region) {
-        layoutInfo.hide(1000);
+    if ($("#layoutInfo").is(":visible") && !region) {
+        $("#layoutInfo").hide(700);
     }
-    else if (layoutInfo.is(":visible") && region) {    //modficar los datos de layoutInfo
-        layoutInfo.hide(750);
-        layoutInfo.show(750);
+    else if ($("#layoutInfo").is(":visible") && region) {    //modficar los datos de layoutInfo
+        $("#layoutInfo").hide(500);
+        $("#layoutInfo").show(500);
         setTimeout(function () {
             $("#layoutInfo > h2").text(fGround.name);
             showDefault();
             getActive();
-        }, 750);
+        }, 500);
+
     }
     else if (!layoutInfo.is(":visible") && region) {
         $("#layoutInfo > h2").text(fGround.name);
-        layoutInfo.show(1000);
+        $("#layoutInfo").show(700);
     }
 
     currentGround = fGround;
@@ -222,17 +226,11 @@ function showDefault() {
 
     //Titulo de las artes de pesca por caladero
     let aux = getInfoById(currentGround.idInfo);
-
-    //Contenido
-    let correctData = parseSpeechTest(aux.speech);
-    $("#info").html(correctData.ret);
-
-    //Posibles links
-    correctData.links.forEach((elem) => {
-        let link = $("<a>").attr("href", elem).html(elem);
-        $("#info").append(link); +
-            $("#info").append("</br>");
-    });
+    if (aux != null) {
+        //Contenido
+        let correctData = parseSpeechTest(aux.speech);
+        $("#info").html(correctData.ret);
+    };
 };
 
 
