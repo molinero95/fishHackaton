@@ -77,10 +77,10 @@
             "http://www.boe.es/boe/dias/2005/06/01/pdfs/A18461-18462.pdf",
             "",
             "<h3>Pesca de sardina</h3>",
-            "",
             "El periodo autorizado para ejercer la pesca de sardina será de cinco días a la semana cada buque, con un descanso mínimo de 48 horas continuadas.",
             "",
             "Orden AAA/1512/2014, de 30 de julio, por la que se establece un plan de gestión para la sardina (Sardina pilchardus) de las aguas ibéricas (VIIIc y IXa).",
+            "",
             "https://www.boe.es/boe/dias/2014/08/14/pdfs/BOE-A-2014-8731.pdf"
         ],
         "methodsAvailable": [
@@ -111,7 +111,7 @@
             "El periodo hábil para la pesca de langosta con nasas es limitado, así como la profundidad mínima de los fondos en los que se puede capturar este animal.",
             "Existen tallas mínimas para algunas especies, que deberán ser respetadas para su retención y comercialización."
         ],
-        "more": "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
+        "more": "<h3>Diario de a bordo</h3> Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
     },
     {
         "id": "2",
@@ -248,7 +248,7 @@
             "Existen restricciones que afectan a las dimensiones de los buques en función de las artes de pesca.",
             "Para la pesca del voraz o besugo, es necesario disponer de una licencia vigente para el uso de voraceras. El periodo de pesca de este animal se encuentra restringido, y el esfuerzo pesquero no podrá superar los 140 días al año."
         ],
-        "more": "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
+        "more": "<h3>Diario de a bordo</h3> Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
     },
     {
         "id": "4",
@@ -444,7 +444,7 @@
             "Existe una zona de pesca restringida de especies demersales.",
             "Existen tallas mínimas para algunas especies, que deberán ser respetadas para su retención y comercialización."
         ],
-        "more": "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
+        "more": "<h3>Diario de a bordo</h3> Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
     },
     {
         "id": "5",
@@ -551,6 +551,6 @@
             "Solo determinadas especies están autorizadas para ser pescadas con artes de cerco, y su utilización como cebo, vivo, muerto, o como carnada, se encuentra restringida.",
             "Existen tallas mínimas para algunas especies, que deberán ser respetadas para su retención y comercialización."
         ],
-        "more": "Diario de a bordo - Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
+        "more": "<h3>Diario de a bordo</h3> Todos los buques deberán disponer de un Diario de a bordo, donde se anoten diariamente los detalles de su actividad, contabilizaciones de capturas y desembarque de especies, etc."
     }
 ]

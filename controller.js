@@ -141,11 +141,6 @@ function showMeasure() {
 
     let aux = getInfoById(currentGround.idInfo);
 
-    //Sonido
-    let sound = '<button type="button" class="btn btn-primary" id="sound" onclick="speech()">Reproducir</button>';
-    container.prepend(sound);
-
-
     //Contenido
     mytable = $('<table></table>').addClass("table");
     var rows = new Number(aux.minimumSizes.lenght);
@@ -170,7 +165,14 @@ function showMeasure() {
 function showMore() {
     $(".activ").removeClass("activ");
     $("#moreBtn").addClass("activ");  
-        clearData();
+    clearData();
+
+    let container = $("#infoContainer");
+
+    let aux = getInfoById(currentGround.idInfo);
+
+    $("#info").html(aux.more);
+
 };
 
 
