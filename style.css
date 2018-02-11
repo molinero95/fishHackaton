@@ -39,14 +39,15 @@ body, html{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 10px;
 }
+
+
 #iconos span > img {
     height: 5rem;
     width: 5rem;
     margin-bottom: 0;
 }
+
 
 #iconos span{
     text-align: center;
