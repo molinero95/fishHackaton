@@ -35,20 +35,20 @@ let addListenersOnPolygon = function (polygon, element) {
 function showHideInfo(fGround) {
 
     if ($("#layoutInfo").is(":visible") && !region) {
-        $("#layoutInfo").hide(1000);
+        $("#layoutInfo").hide(700);
     }
     else if ($("#layoutInfo").is(":visible") && region) {    //modficar los datos de layoutInfo
-        $("#layoutInfo").hide(750);
-        $("#layoutInfo").show(750);
+        $("#layoutInfo").hide(500);
+        $("#layoutInfo").show(500);
         setTimeout(function () {
             $("#layoutInfo > h2").text(fGround.name);
             getActive();
-        }, 750);
+        }, 500);
 
     }
     else if (!$("#layoutInfo").is(":visible") && region) {
         $("#layoutInfo > h2").text(fGround.name);
-        $("#layoutInfo").show(1000);
+        $("#layoutInfo").show(700);
     }
 
     currentGround = fGround;
